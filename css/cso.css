@@ -1,0 +1,241 @@
+/********** **********
+*        SITE
+********** **********/
+.highlight {
+	border-bottom: solid 2px #ffea00;
+	border-radius: 4px;
+}
+.display-overlay {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 0 4px #212121;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 112px;
+}
+
+/********** **********
+*      MATERIAL
+********** **********/
+.gm-display4 {
+	font-size: 112px;
+	font-weight: 300;
+}
+.gm-display3 {
+	font-size: 56px;
+}
+.gm-display2 {
+	font-size: 45px;
+}
+.gm-display1 {
+	font-size: 34px;
+}
+.gm-headline {
+	font-size: 24px;
+}
+.gm-title {
+	font-size: 20px;
+	font-weight: 600;
+}
+.gm-subheading-device {
+	font-size: 16px;
+}
+.gm-subheading {
+	font-size: 15px;
+}
+.gm-body2-device {
+	font-size: 14px;
+	font-weight: 600;
+}
+.gm-body2 {
+	font-size: 13px;
+	font-weight: 600;
+}
+.gm-body1-device {
+	font-size: 14px;
+}
+.gm-body1 {
+	font-size: 13px;
+}
+.gm-caption {
+	font-size: 12px;
+}
+.gm-button {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.gm-input-group {
+	position: relative;
+	width: auto;
+	height: 72px;
+	font-size: 16px;
+	display: inline-block;
+	opacity: 0.38;
+}
+.gm-input-group input {
+	display: block;
+	border: none;
+	border-bottom: solid 1px #000;
+	box-shadow: none;
+	padding: 36px 0 8px;
+}
+.gm-input-group label {
+	font-weight: 400;
+	pointer-events: none;
+	position: absolute;
+	top: 36px;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all; 
+	-webkit-transition: 0.2s ease all;
+}
+.gm-input-group input:focus {
+	outline: none;
+}
+.gm-input-group input:focus ~ label,
+.gm-input-group input:valid ~ label {
+	top: 16px;
+	font-size: 12px;
+	color: #673AB7;
+}
+.gm-input-group .bar {
+	position: relative;
+	display: block;
+}
+.gm-input-group .bar:before,
+.gm-input-group .bar:after {
+	content: "";
+	width: 0px;
+	height: 2px;
+	position: absolute;
+	bottom: 1px;
+	background: #673AB7;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all; 
+	-webkit-transition: 0.2s ease all;
+}
+.gm-input-group .bar:before {
+	left: 50%;
+}
+.gm-input-group .bar:after {
+	right: 50%;
+}
+.gm-input-group input:focus ~ .bar:before,
+.gm-input-group input:focus ~ .bar:after {
+	width: 50%;
+}
+.gm-input-group-200,
+.gm-input-group-200 input,
+.gm-input-group-200 label,
+.gm-input-group-200 .row {
+	width: 200px;
+}
+.gm-input-group-200 .after-text {
+	position: absolute;
+	top: 36px;
+	right: 0;
+}
+.gm-input-group-200 .after-text ~ input{
+	padding-right: 50%;
+}
+
+.gm-flat-button {
+	min-width: 88px;
+	height: 36px;
+	border-radius: 2px;
+	padding: 0 8px;
+	margin: 0 8px;
+	background: none;
+	border: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.gm-flat-button:hover {
+	background: #D1C4E9;
+}
+.gm-flat-button:active {
+	outline: none;
+	background: #7E57C2;
+}
+.gm-flat-button:focus {
+	outline: none;
+}
+/********** **********
+*       NAVBAR
+********** **********/
+#navbar {
+	background: #212121;
+	box-shadow: 0 2px 8px;
+	border: none;
+	padding-top: 4px;
+}
+#navbar li.active {
+	box-shadow: 0 -2px 0px #ffea00 inset;
+}
+#navbar li.active a {
+	color: #ffea00;
+}
+#navbar a {
+	color: #FFF;
+	font-weight: 600;
+	background: none;
+}
+#navbar .navbar-nav li:not(.active) a:hover {
+	color: #ffea00;
+}
+.navbar-brand {
+	padding: 10px;
+}
+.logo {
+	background-image: url('../raw/cso-logo.png');
+	position: absolute;
+	left: 0;
+	top: 50px;
+	width: 100px;
+	height: 50px;
+	background-position: center;
+	background-size: cover;
+	margin: 16px;
+}
+
+/********** **********
+*       FOOTER
+********** **********/
+.footer {
+	padding: 64px 0;
+	background: #212121;
+	width: 100%;
+	color: #FFF;
+	text-align: center;
+}
+.footer-title {
+	color: rgba(255,255,255,0.54);
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	text-align: left;
+}
+.footer-list {
+	padding-left: 16px;
+	list-style: none;
+}
+.footer-list li {
+	text-align: left;
+	margin-top: 14px;
+}
+.footer-list li a {
+	text-decoration: none;
+	color: #FFF;
+}
+.footer-list li a:hover {
+	color: #ffea00;
+}
+.footer-disclaimer {
+	text-align: left;
+	margin-top: 16px;
+}
