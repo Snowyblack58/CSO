@@ -8,8 +8,8 @@
 .display-overlay {
 	width: 100%;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 0%;
+	transform: translateY(0%);
 	color: #fff;
 	text-align: center;
 	text-shadow: 0 0 4px #212121;
