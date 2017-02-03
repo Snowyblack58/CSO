@@ -26,7 +26,7 @@ p {
 *      CALENDAR
 *********** *********/
 .lc-container {
-	width: 66%;
+	padding: 0;
 	background: #ddd;
 }
 .lc-title-bar {
