@@ -27,7 +27,7 @@ function onSignIn(googleUser){
 			}
 		},
 		error: function(data){
-			console.log("UHOH");
+			console.log("Failed");
 			console.log(data);
 		}
 	});
