@@ -19,6 +19,15 @@
 }
 
 /********** **********
+*      CALENDAR
+*********** *********/
+.lc-container {
+	width: 66%;
+	background: #ddd;
+	min-height: 500px;
+}
+
+/********** **********
 *      MATERIAL
 ********** **********/
 .gm-display4 {
@@ -173,7 +182,6 @@
 	background: #212121;
 	box-shadow: 0 2px 8px;
 	border: none;
-	padding-top: 4px;
 }
 #navbar li.active {
 	box-shadow: 0 -2px 0px #ffea00 inset;
@@ -189,7 +197,7 @@
 #navbar .navbar-nav li:not(.active) a:hover {
 	color: #ffea00;
 }
-.navbar-brand {
+#navbar-brand {
 	padding: 10px;
 }
 .logo {
@@ -202,6 +210,10 @@
 	background-position: center;
 	background-size: cover;
 	margin: 16px;
+}
+
+.buffer {
+	height: 50px;
 }
 
 /********** **********
