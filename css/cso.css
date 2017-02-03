@@ -1,3 +1,7 @@
+p {
+	margin: 0;
+}
+
 /********** **********
 *        SITE
 ********** **********/
@@ -24,7 +28,80 @@
 .lc-container {
 	width: 66%;
 	background: #ddd;
-	min-height: 500px;
+}
+.lc-title-bar {
+	height: 64px;
+	line-height: 24px;
+	padding: 20px 24px;
+}
+.lc-title-bar p {
+	display: inline-block;
+	margin: 0;
+}
+.lc-title-bar input {
+	display: inline-block;
+	float: right;
+	width: 24px;
+	height: 24px;
+	background: #eee;
+	border: none;
+}
+.lc-main {
+	width: 100%;
+	height: 400px;
+	background: #eee;
+	padding: 8px;
+	overflow-y: scroll;
+}
+.lc-day-container {
+	width: 100%;
+}
+.lc-date-container{
+	float: left;
+	display: inline-block;
+}
+.lc-date {
+	width: 120px;
+	height: 64px;
+	line-height: 24px;
+	padding: 20px 24px;
+}
+.lc-dayofweek {
+	font-weight: 600;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+.lc-dateofmonth {
+	font-weight: 600;
+	font-size: 24px;
+}
+.lc-events-container {
+	display: inline-block;
+	width: calc(100% - 120px);
+}
+.lc-event {
+	margin: 8px;
+	padding: 8px;
+	border-radius: 2px;
+}
+.lc-event-title {
+	font-weight: 600;
+	color: #fff;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.lc-event-quickinfo {
+	color: #fff;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.lc-event-rehearsal {
+	background: #ff7800;
+}
+.lc-event-social {
+	background: #ffd000;
 }
 
 /********** **********
