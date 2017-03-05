@@ -16,8 +16,19 @@
 	</head>
 	<body>
 		<!--#include file="navbar.html" -->
-		<div style="margin-top: 100px" class="g-signin2" data-onsuccess="onSignIn"></div>
-		<a href="#" onclick="signOut();">Sign out</a>
+		<div id="g-signin" style="margin-top: 100px" class="g-signin2" data-onsuccess="onSignIn"></div>
+		<a href="/" id="g-signout" onclick="signOut();">Sign out</a>
+		<div class"container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div id="member-calendar" class="lc-container">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<p id="greeting" class="gm-display1"></p>
+				</div>
+			</div>
+		</div>
 		<!--#include file="footer.html" -->
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

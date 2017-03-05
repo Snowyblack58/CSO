@@ -31,3 +31,12 @@
 	background-size: cover;
 	margin: 16px;
 }
+
+@media (max-device-width: 768px) {
+	#navbar li {
+		float: left;	
+	}
+	.navbar-header {
+		display: none;	
+	}
+}

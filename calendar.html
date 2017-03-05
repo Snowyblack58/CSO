@@ -17,85 +17,25 @@
 		<!--#include file="navbar.html" -->
 		<div class="container">
 			<div class="row">
-			<div id="member-calendar" class="col-sm-8 col-sm-offset-2 lc-container">
-			<div class="lc-title-bar">
-				<p class="gm-title">February</p>
-				<input type="button">
-			</div>
-			<div class="lc-main">
-				<div class="lc-day-container">
-					<div class="lc-date-container">
-						<div class="lc-date">
-							<span class="lc-dateofmonth">4</span>
-							<span class="lc-dayofweek">Sat</span>
-						</div>
-					</div>
-					<div class="lc-events-container">
-						<div class="lc-event lc-event-rehearsal">
-							<p class="lc-event-title">Rehearsal</p>
-							<p class="lc-event-quickinfo">1-3pm, Newcomb South Meeting Room</p>
-						</div>
-						<div class="lc-event lc-event-social">
-							<p class="lc-event-title">Game Night</p>
-							<p class="lc-event-quickinfo">7-9pm, Newcomb Game Room</p>
-						</div>
-						<div class="lc-event lc-event-rehearsal">
-							<p class="lc-event-title">Rehearsal</p>
-							<p class="lc-event-quickinfo">1-3pm, Newcomb South Meeting Room</p>
-						</div>
-					</div>
+				<div id="member-calendar" class="lc-container">
 				</div>
-				<div class="lc-day-container">
-					<div class="lc-date-container">
-						<div class="lc-date">
-							<span class="lc-dateofmonth">5</span>
-							<span class="lc-dayofweek">Sun</span>
-						</div>
-					</div>
-					<div class="lc-events-container">
-						<div class="lc-event lc-event-rehearsal">
-							<p class="lc-event-title">Rehearsal</p>
-							<p class="lc-event-quickinfo">1-3pm, Newcomb South Meeting Room</p>
-						</div>
-					</div>
-				</div>
-				<div class="lc-day-container">
-					<div class="lc-date-container">
-						<div class="lc-date">
-							<span class="lc-dateofmonth">11</span>
-							<span class="lc-dayofweek">Sat</span>
-						</div>
-					</div>
-					<div class="lc-events-container">
-						<div class="lc-event lc-event-social">
-							<p class="lc-event-title">Game Night</p>
-							<p class="lc-event-quickinfo">7-9pm, Newcomb Game Room</p>
-						</div>
-						<div class="lc-event lc-event-rehearsal">
-							<p class="lc-event-title">Rehearsal</p>
-							<p class="lc-event-quickinfo">1-3pm, Newcomb South Meeting Room</p>
-						</div>
-					</div>
-				</div>
-				<div class="lc-day-container">
-					<div class="lc-date-container">
-						<div class="lc-date">
-							<span class="lc-dateofmonth">12</span>
-							<span class="lc-dayofweek">Sun</span>
-						</div>
-					</div>
-					<div class="lc-events-container">
-						<div class="lc-event lc-event-rehearsal">
-							<p class="lc-event-title">Rehearsal</p>
-							<p class="lc-event-quickinfo">1-3pm, Newcomb South Meeting Room</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 			</div>
 		</div>
 		<!--#include file="footer.html" -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+		<script type="text/javascript">
+			$.ajax({
+				type: "POST",
+				url: "./php/retrieve_calendar.php",
+				success: function(data){
+					$("#member-calendar").append(data);
+					console.log(data);	
+				},
+				error: function(data){
+					console.log("error: " + data);	
+				}
+			});
+		</script>
 	</body>
 </html>

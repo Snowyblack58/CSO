@@ -127,6 +127,9 @@ p {
 	font-size: 20px;
 	font-weight: 600;
 }
+.gm1-title {
+	font-size: 20px;
+}
 .gm-subheading-device {
 	font-size: 16px;
 }
@@ -256,6 +259,7 @@ p {
 *       NAVBAR
 ********** **********/
 #navbar {
+	font-family: "Open Sans", "Roboto", sans-serif;
 	background: #212121;
 	box-shadow: 0 2px 8px;
 	border: none;
@@ -289,9 +293,19 @@ p {
 	margin: 16px;
 }
 
+@media (max-device-width: 768px) {
+	nav>li {
+		float: left;	
+	}
+	.navbar-header {
+		display: none;	
+	}
+}
+
 .buffer {
 	height: 50px;
 }
+
 
 /********** **********
 *       FOOTER
