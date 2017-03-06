@@ -1,5 +1,7 @@
 # CSO
 The Cavalier Symphony Orchestra website
+Currently under development with a live demo version at cavalierso.com (usr: guest, pwd: csoexec)
+
 
 ##What type of users are we dealing with here?
 1. Parents with students not in CSO - how do we get them to push their children to join CSO?
