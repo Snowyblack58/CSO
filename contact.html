@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Contact | Cavalier Symphony Orchestra</title>
+		
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+		<link rel="stylesheet" href="css/cso.css">
+	</head>
+	<body>
+		<!--#include file="navbar.html" -->
+		<section id="contact-form" class="col-sm-8 col-sm-offset-2">
+			<form action="contact.php" class="form-horizontal">
+				<div id="cf-group-reason" class="form-group">
+					<label class="col-sm-3 control-label" for="cf-reason">How can we help you?</label>
+					<div class="col-sm-9">
+						<select id="cf-reason" class="form-control">
+							<option id="cf-option-0" selected="selected"></option>
+							<option id="cf-option-1">Can't make a rehearsal or have to come late</option>
+							<option id="cf-option-2">Need some music</option>
+							<option id="cf-option-3">Report an issue with the website</option>
+							<option id="cf-option-4">Give feedback</option>
+							<option id="cf-option-5">Anything else</option>
+						</select>	
+					</div>
+				</div>
+				<div id="cf-group-anonymous" class="checkbox form-group">
+					<div class="col-sm-9 col-sm-offset-3">
+						<label>
+							<input type="checkbox" value="">
+							Anonymous?
+						</label>
+					</div>
+				</div>
+				<div id="cf-group-name" class="form-group">
+					<label class="col-sm-3 control-label" for="cf-name">Name</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="cf-name" placeholder="David Zhao"></input>
+					</div>
+				</div>
+				<div id="cf-group-cid" class="form-group">
+					<label class="col-sm-3 control-label" for="cf-cid">Computing ID</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="cf-cid" placeholder="dz6hu"></input>
+					</div>
+				</div>
+				<div id="cf-group-instrument" class="form-group">
+					<label class="col-sm-3 control-label" for="cf-instrument">Instrument</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="cf-instrument" placeholder="Trumpet"></input>
+					</div>
+				</div>
+				<div id="cf-group-email" class="form-group">
+					<label class="col-sm-3 control-label" for="cf-email">Email Address</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="cf-instrument" placeholder="Email"></input>
+					</div>
+				</div>
+				<div id="cf-group-comments" class="form-group">
+					<label class="col-sm-3 control-label" for="cf-comments">Comments</label>
+					<div class="col-sm-9">
+						<textarea class="form-control" id="cf-comments" rows="3"></textarea>
+					</div>
+				</div>
+				<div id="cf-group-submit" class="form-group">
+					<div class="col-sm-offset-3 col-sm-9">
+						<button type="submit" class="btn btn-default">Submit</button>
+					</div>
+				</div>
+			</form>
+
+		</section>
+		<!--#include file="footer.html" -->
+		
+		<style type="text/css">
+			#contact-form {
+				min-height: 100%;
+				min-height: calc(100% - 128px);
+				height: 600px;
+				padding: 64px 0 32px;
+				text-align: left;
+			}
+			.form-group:not(#cf-group-reason){
+				display: none;
+			}
+			
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+			$("#cf-reason").change(function(){
+				switch(parseInt($("#cf-reason option:selected").attr("id").slice(-1))){
+					case 0:
+						$(".form-group:not(#cf-group-reason)").css("display","none");
+						$(".form-group:not(#cf-group-reason) input").css("required","false");
+						break;
+					case 1:
+						$("#cf-group-name").css("display","initial");
+						$("#cf-group-name input").attr("required","true");
+						$("#cf-group-cid").css("display","initial");
+						$("#cf-group-cid input").attr("required","true");
+						$("#cf-group-email").css("display","none");
+						$("#cf-group-instrument").css("display","initial");
+						$("#cf-group-instrument input").attr("required","true");
+						$("#cf-group-anonymous").css("display","none");
+						$("#cf-group-comments").css("display","initial");
+						$("#cf-group-comments input").attr("required","true");
+						$("#cf-group-submit").css("display","initial");
+						$("#cf-comments").attr("placeholder","We're going to miss you at rehearsal! What's your conflict?");
+						anonymous(false);
+						break;
+					case 2:
+						$("#cf-group-name").css("display","initial");
+						$("#cf-group-name input").attr("required","true");
+						$("#cf-group-cid").css("display","initial");
+						$("#cf-group-cid input").attr("required","true");
+						$("#cf-group-email").css("display","none");
+						$("#cf-group-instrument").css("display","initial");
+						$("#cf-group-instrument input").attr("required","true");
+						$("#cf-group-anonymous").css("display","none");
+						$("#cf-group-comments").css("display","initial");
+						$("#cf-group-comments input").attr("required","true");
+						$("#cf-group-submit").css("display","initial");
+						$("#cf-comments").attr("placeholder","Which pieces and what parts do you need?");
+						anonymous(false);
+						break;
+					case 3:
+						$("#cf-group-name").css("display","initial");
+						$("#cf-group-name input").attr("required","true");
+						$("#cf-group-cid").css("display","none");
+						$("#cf-group-instrument").css("display","initial");
+						$("#cf-group-instrument input").attr("required","true");
+						$("#cf-group-anonymous").css("display","initial");
+						$("#cf-group-comments").css("display","initial");
+						$("#cf-group-comments input").attr("required","true");
+						$("#cf-group-email").css("display","initial");
+						$("#cf-group-submit").css("display","initial");
+						$("#cf-comments").attr("placeholder","Website feedback, bugs, comments, suggestions, general wishes...");
+						anonymous(true);
+						break;
+					case 4:
+						$("#cf-group-name").css("display","initial");
+						$("#cf-group-name input").attr("required","true");
+						$("#cf-group-cid").css("display","none");
+						$("#cf-group-email").css("display","initial");
+						$("#cf-group-email input").attr("required","true");
+						$("#cf-group-instrument").css("display","initial");
+						$("#cf-group-instrument input").attr("required","true");
+						$("#cf-group-anonymous").css("display","initial");
+						$("#cf-group-comments").css("display","initial");
+						$("#cf-group-comments input").attr("required","true");
+						$("#cf-group-submit").css("display","initial");
+						$("#cf-comments").attr("placeholder","Feedback for conductors, about rehearsals, for exec...");
+						anonymous(true);
+						break;
+					case 5:
+						$("#cf-group-name").css("display","initial");
+						$("#cf-group-name input").attr("required","true");
+						$("#cf-group-cid").css("display","none");
+						$("#cf-group-email").css("display","initial");
+						$("#cf-group-email input").attr("required","true");
+						$("#cf-group-instrument").css("display","none");
+						$("#cf-group-anonymous").css("display","none");
+						$("#cf-group-comments").css("display","initial");
+						$("#cf-group-comments input").attr("required","true");
+						$("#cf-group-submit").css("display","initial");
+						$("#cf-comments").attr("placeholder","Any other questions, we'll get back to you ASAP...");
+						anonymous(false);
+						break;
+					default:
+						console.log("ripperino");
+						break;
+				}
+			});
+			
+			function anonymous(anonEnabled){
+				console.log(anonEnabled);
+				if(anonEnabled){
+					$("#cf-group-anonymous input").change(function(){
+						if($(this).is(":checked")){
+							console.log("hide things");
+							$("#cf-group-name").css("display","none");
+							$("#cf-group-name input").attr("required","false");
+							$("#cf-group-cid").css("display","none");
+							$("#cf-group-cid input").attr("required","false");
+							$("#cf-group-instrument").css("display","none");
+							$("#cf-group-instrument input").attr("required","false");
+							$("#cf-group-email").css("display","none");
+							$("#cf-group-email input").attr("required","false");
+						} else {
+							console.log("show things");
+							$("#cf-group-name").css("display","initial");
+							$("#cf-group-name input").attr("required","true");
+							$("#cf-group-cid").css("display","initial");
+							$("#cf-group-cid input").attr("required","true");
+							$("#cf-group-instrument").css("display","initial");
+							$("#cf-group-instrument input").attr("required","true");
+							$("#cf-group-email").css("display","initial");
+							$("#cf-group-email input").attr("required","true");
+						}
+					});
+					$("#cf-group-anonymous input").change();
+				} else {
+					console.log("really show things");
+					$("#cf-group-anonymous input").change(function(){});
+					$("#cf-group-name").css("display","initial");
+					$("#cf-group-name input").attr("required","true");
+					$("#cf-group-cid").css("display","initial");
+					$("#cf-group-cid input").attr("required","true");
+					$("#cf-group-instrument").css("display","initial");	
+					$("#cf-group-instrument input").attr("required","true");
+					$("#cf-group-email").css("display","initial");
+					$("#cf-group-email input").attr("required","true");
+				}
+			}
+		</script>
+	</body>
+</html>
