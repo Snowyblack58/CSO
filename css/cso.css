@@ -273,6 +273,9 @@ p {
 #navbar-brand {
 	padding: 10px;
 }
+.buffer {
+	height: 50px;
+}
 .logo {
 	background-image: url('../raw/cso-logo.png');
 	position: absolute;
@@ -308,10 +311,9 @@ p {
 	nav li {
 		float: left;
 	}
-}
-
-.buffer {
-	height: 50px;
+    .buffer {
+        height: 100px;
+    }
 }
 
 
