@@ -6,7 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<title>Join | Cavalier Symphony Orchestra</title>
-		
+				
+		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
@@ -16,6 +17,9 @@
 		<!--#include file="navbar.html"-->
         <section id="faq">
             <div class="container">
+                <div class="faq-title-card col-sm-12">
+                    <p class="faq-title-card-text">Frequently Asked Questions</p>
+                </div>
                 <div class="faq-card col-sm-3">
                     <p class="faq-card-question">Auditions</p>
                     <p class="faq-card-answer">You are <span class="faq-highlight">not required</span> to audition to join CSO. The only exceptions to this rule are if you want to be a section leader, join the top group or play piano for us. We'd like to hear you play just to make sure you're as awesome as we already know you are.</p>
@@ -73,17 +77,50 @@
                 padding: 0;
                 margin: 0;
                 width: 100%;
+                background-image: url(raw/IMG_3012_compressed.JPG);
+                background-size: cover;
+                background-position: center;
+            }
+            @media(max-width: 768px){
+                #faq .container {
+                    background-image: none;
+                    background: #fff;
+                }
+            }
+            .faq-title-card {
+                position: relative;
+                outline: solid 1px #212121;
+                padding: 16px;
+                min-height: 200px;
+                background: #fff;
+            }
+            .faq-title-card-text {
+                font-size: 64px;
+                color: #000;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-weight: 600;
+                font-family: "Satisfy", sans-serif;
             }
             .faq-card {
                 position: relative;
-                outline: solid 1px #EDEDED;
+                outline: solid 1px #212121;
                 padding: 16px;
-                min-height: 300px;
+                min-height: 400px;
+                background: #fff;
+                opacity: 0.87;
+                color: #000;
             }
             .faq-card:hover {
                 z-index: 2;
                 outline: none;
                 box-shadow: 0 0 2px 1px #3498db;
+                background: #fff;
+                color: #000;
+                opacity: 1;
             }
             .faq-highlight {
                 padding: 2px;
