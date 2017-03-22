@@ -252,23 +252,31 @@ p {
 ********** **********/
 #navbar {
 	font-family: "Open Sans", "Roboto", sans-serif;
-	background: #212121;
-	box-shadow: 0 2px 8px;
+/*	background: #212121;*/
+/*	box-shadow: 0 2px 8px;*/
 	border: none;
+}
+.nav {
+    float: none;
+}
+#navbar li {
+    float: none;
+    display: inline-block;
 }
 #navbar li.active {
 	box-shadow: 0 -2px 0px #ffea00 inset;
 }
 #navbar li.active a {
-	color: #ffea00;
+	color: #3498db;
 }
 #navbar a {
-	color: #FFF;
+    color: #000;
+    cursor: pointer;
 	font-weight: 600;
 	background: none;
 }
 #navbar .navbar-nav li:not(.active) a:hover {
-	color: #ffea00;
+	color: #3498db;
 }
 #navbar-brand {
 	padding: 10px;
@@ -322,13 +330,13 @@ p {
 ********** **********/
 .footer {
 	padding: 64px 0;
-	background: #212121;
+	background: #f8f8f8;
 	width: 100%;
-	color: #FFF;
+	color: #000;
 	text-align: center;
 }
 .footer-title {
-	color: rgba(255,255,255,0.54);
+/*	color: rgba(255,255,255,0.54);*/
 	text-transform: capitalize;
 	margin-bottom: 0px;
 	text-align: left;
@@ -343,7 +351,7 @@ p {
 }
 .footer-list li a {
 	text-decoration: none;
-	color: #FFF;
+	color: #000;
 }
 .footer-list li a:hover {
 	color: #ffea00;
@@ -351,4 +359,7 @@ p {
 .footer-disclaimer {
 	text-align: left;
 	margin-top: 16px;
+}
+.footer img {
+    opacity: 0.54;
 }

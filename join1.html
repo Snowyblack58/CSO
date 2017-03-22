@@ -21,32 +21,52 @@
                     <p class="faq-title-card-text">Frequently Asked Questions</p>
                 </div>
                 <div class="faq-card col-sm-3">
-                    <p class="faq-card-question">Auditions</p>
-                    <p class="faq-card-answer">You are <span class="faq-highlight">not required</span> to audition to join CSO. The only exceptions to this rule are if you want to be a section leader, join the top group or play piano for us. We'd like to hear you play just to make sure you're as awesome as we already know you are.</p>
+                    <div class="faq-card-container">
+                        <p class="faq-card-question">Auditions</p>
+                        <p class="faq-card-answer">You are <span class="faq-highlight">not required</span> to audition to join CSO. The only exceptions to this rule are if you want to be a section leader, join the top group or play piano for us. We'd like to hear you play just to make sure you're as awesome as we already know you are.</p>
+                    </div>
                 </div>
                 <div class="faq-card col-sm-3">
-                    <p class="faq-card-question">Rehearsals</p>
-                    <p class="faq-card-answer">We have rehearsal or sectionals <span class="faq-highlight">once a week</span>, generally Sunday afternoons. For the non-audition group, rehearsals will only be 1 1/2 hours. The upper group will stay just one more hour after the non-audition group leaves. The time commitment is small for CSO because we value your time and understand that you all are busy people.</p>
+                    <div class="faq-card-container">
+                        <p class="faq-card-question">Rehearsals</p>
+                        <p class="faq-card-answer">We have rehearsal or sectionals <span class="faq-highlight">once a week</span>, generally Sunday afternoons. For the non-audition group, rehearsals will only be 1 1/2 hours. The upper group will stay just one more hour after the non-audition group leaves. The time commitment is small for CSO because we value your time and understand that you all are busy people.</p>
+                    </div>
                 </div>
                 <div class="faq-card col-sm-3">
-                    <p class="faq-card-question">Repetoire</p>
-                    <p class="faq-card-answer">We play movie music (Jurassic Park, Star Wars, How to Train Your Dragon), musical music (Phantom of the Opera, Les Miserables), and full orchestra or big band music (New World Symphony, Carmen, Mars). How do we pick what we play? <span class="faq-highlight">You suggest it. You vote it. We play it.</span></p>
+                    <div class="faq-card-container">
+                        <p class="faq-card-question">Repetoire</p>
+                        <p class="faq-card-answer">We play movie music (Jurassic Park, Star Wars, How to Train Your Dragon), musical music (Phantom of the Opera, Les Miserables), and full orchestra or big band music (New World Symphony, Carmen, Mars). How do we pick what we play? <span class="faq-highlight">You suggest it. You vote it. We play it.</span></p>
+                    </div>
                 </div>
                 <div class="faq-card col-sm-3">
-                    <p class="faq-card-question">Instruments</p>
-                    <p class="faq-card-answer"><span class="faq-highlight">All instruments are welcome.</span> We will get you a part to play no matter what instrument. Members are expected to provide their own instruments, but rentals are available in the Charlottesville area. If you need any help whatsoever, please <a href="contact.html">contact us.</a></p>
+                    <div class="faq-card-container">
+                        <p class="faq-card-question">Instruments</p>
+                        <p class="faq-card-answer"><span class="faq-highlight">All instruments are welcome.</span> We will get you a part to play no matter what instrument. Members are expected to provide their own instruments, but rentals are available in the Charlottesville area. If you need any help whatsoever, please <a href="contact.html">contact us.</a></p>
+                    </div>
                 </div>
                 <div class="faq-card col-sm-3">
-                    <p class="faq-card-question">Auditions?</p>
-                    <p class="faq-card-answer">None at all. This is an audition-free group. Overflow the text please.</p>
+                    <div class="faq-card-container">
+                        <p class="faq-card-question">Auditions?</p>
+                        <p class="faq-card-answer">None at all. This is an audition-free group. Overflow the text please.</p>
+                    </div>
                 </div>
                 <div class="faq-card col-sm-3">
-                    <p class="faq-card-question">Auditions?</p>
-                    <p class="faq-card-answer">None at all. This is an audition-free group. Overflow the text please.</p>
+                    <div class="faq-card-container">
+                        <p class="faq-card-question">Auditions?</p>
+                        <p class="faq-card-answer">None at all. This is an audition-free group. Overflow the text please.</p>
+                    </div>
                 </div>
                 <div class="faq-card col-sm-3">
-                    <p class="faq-card-question">Auditions?</p>
-                    <p class="faq-card-answer">None at all. This is an audition-free group. Overflow the text please.</p>
+                    <div class="faq-card-container">
+                        <p class="faq-card-question">Auditions?</p>
+                        <p class="faq-card-answer">None at all. This is an audition-free group. Overflow the text please.</p>
+                    </div>
+                </div>
+                <div class="faq-card col-sm-3">
+                    <div class="faq-card-container">
+                        <p class="faq-card-question">Auditions?</p>
+                        <p class="faq-card-answer">None at all. This is an audition-free group. Overflow the text please.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -89,7 +109,7 @@
             }
             .faq-title-card {
                 position: relative;
-                outline: solid 1px #212121;
+                outline: solid 1px #EFEFEF;
                 padding: 16px;
                 min-height: 200px;
                 background: #fff;
@@ -107,19 +127,34 @@
             }
             .faq-card {
                 position: relative;
-                outline: solid 1px #212121;
-                padding: 16px;
+/*                padding: 16px;*/
                 min-height: 400px;
-                background: #fff;
-                opacity: 0.87;
+/*                background: #fff;*/
+/*                opacity: 0.87;*/
                 color: #000;
             }
-            .faq-card:hover {
+            .faq-card:hover .faq-card-container {
                 z-index: 2;
                 outline: none;
                 box-shadow: 0 0 2px 1px #3498db;
+/*                background: #fff;*/
+/*                color: #000;*/
+/*                opacity: 1;*/
+            }
+            .faq-card-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 16px 0 0;
+                padding: 16px;
                 background: #fff;
-                color: #000;
+/*                opacity: 0.87;*/
+                outline: solid 1px #EFEFEF;
+            }
+            .faq-card-container:hover {
+                box-shadow: 0 0 2px 1px #3498db;
                 opacity: 1;
             }
             .faq-highlight {
