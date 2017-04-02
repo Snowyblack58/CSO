@@ -6,109 +6,125 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<title>Join | Cavalier Symphony Orchestra</title>
-		
+				
+		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
 		<link rel="stylesheet" href="css/cso.css">
-		<link rel="stylesheet" href="css/join.css">
 	</head>
 	<body>
 		<!--#include file="navbar.html"-->
-		<section id="faq">
-<!--
-Eligibility - Instruments - Auditions
-Cost - Time Commitment - Music
-Leadership - Social
-How to Join
--->
-			<div class="container">
-				<p class="gm-headline">Joining FAQ</p>
-				<div class="col-sm-12">
-					<p class="gm-title">Can I join?</p>
-					<p class="gm-body1">If you play an instrument, you can join. We welcome musicians of all levels &mdash; beginner through advanced. Remember, no auditions.</p>
-				</div>
-				<div class="col-sm-12">
-					<p class="gm-title">What instruments do you take?</p>
-					<p class="gm-body1">All instruments welcome. We are looking especially for brass, winds, and percussion. Members are expected to provide their own instruments, but rentals are available in the Charlottesville area. If you need any help whatsoever, please contact <u>CavSO@email.virginia.edu</u>.</p>
-				</div>
-				<div class="col-sm-12">
-					<p class="gm-title">Do I have to audition to join?</p>
-					<p class="gm-body1">No auditions</p>
-				</div>
-				<div class="col-sm-12">
-					<p class="gm-title">What type music do you play?</p>
-					<p class="gm-body1">Members vote on our music. We'll play anything from Williams' Star Wars to Dvorak's New World Symphony to Holst's Mars.</p>
-				</div>
-				<div class="col-sm-12">
-					<p class="gm-title">How much does it cost to join?</p>
-					<p class="gm-body1">Dues are $35 for one semester or $50 for an entire year. Renting a stand costs an additional $10 (our stands are heavy-duty, foldable stands, not wire stands). With these dues, you help us purchase repetoire, host social events, and provide music stands.</p>
-				</div>
-				<div class="col-sm-12">
-					<p class="gm-title">What's the time commitment?</p>
-					<p class="gm-body1">Only 2 hours a week. Our rehearsals are generally Sundays, 1-3pm, in the Newcomb South Meeting Room. A more extensive calendar can be found on our <a href="members.php">members dashboard >></a></p>
-				</div>
-				<div class="col-sm-12">
-					<p class="gm-title">What are some leadership opportunities?</p>
-					<ol>
-						<li>
-							<p class="gm-body2">Section Leader</p>
-							<p class="gm-body1">A section leader is both a musical role and a social role. More information on how to become a section leader can be <a href="">found here >></a></p>
-						</li>
-						<li>
-							<p class="gm-body2">Exec Board</p>
-							<p class="gm-body1">The execs are the people behind the scenes making everything &mdash; social events, rehearsals, concerts &mdash; happen. More information on how to become an exec can be <a href="">found here >></a></p>
-						</li>
-						<li>
-							<p class="gm-body2">Conducting</p>
-							<p class="gm-body1">Conductors are student leaders that rehearse the band and lead the band during concerts. More information on how to become a conductor can be <a href="">found here >></a></p>
-						</li>
-					</ol>
-				</div>
-				<div class="col-sm-12">
-					<p class="gm-title">I'm ready to join! What should I do?</p>
-					<p class="gm-body1">Fill out this form. We'll contact you within the next few days.</p>
-					<form name="join-form" method="post" action="php/send_join_email.php">
-						<div id="form-name" class="gm-input-group gm-input-group-200">
-							<input name="name" type="text" required>
-							<span class="bar"></span>
-							<label>Full Name</label>
-						</div>	
-						<br>
-						<div id="form-computingid" class="gm-input-group gm-input-group-200">
-							<span class="after-text">@virginia.edu</span>
-							<input name="computingid" type="text" required>
-							<span class="bar"></span>
-							<label>Computing ID</label>
-						</div>
-						<br>
-						<div id="form-instruments" class="gm-input-group gm-input-group-200">
-							<input name="instruments" type="text" required>
-							<span class="bar"></span>
-							<label>Instrument(s)</label>
-						</div>
-						<br>
-						<div id="form-year" class="gm-input-group gm-input-group-200">
-							<input name="year" type="text" required>
-							<span class="bar"></span>
-							<label>Year i.e. First Year</label>
-						</div>
-						<br>
-						<div id="form-experience" class="gm-input-group gm-input-group-200">
-							<input name="experience" type="text" required>
-							<span class="bar"></span>
-							<label>Your musical experience</label>
-						</div>
-						<br>
-						<br>
-						<input type="submit" class="gm-flat-button">
-					</form>
-				</div>
-			</div>
-		</section>
+        <section id="faq" class="info-background">
+            <div id="faq-background" class="background-fixed">
+                <div class="info-title-card col-sm-12">
+                    <p>Frequently Asked Questions</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="info-card col-sm-3">
+                    <div class="info-card-container">
+                        <p class="info-card-question">Auditions</p>
+                        <p class="info-card-answer">You are <span class="info-highlight">not required</span> to audition to join CSO. The only exceptions to this rule are if you want to be a section leader, join the top group or play piano for us. We'd like to hear you play just to make sure you're as awesome as we already know you are.</p>
+                    </div>
+                </div>
+                <div class="info-card col-sm-3">
+                    <div class="info-card-container">
+                        <p class="info-card-question">Rehearsals</p>
+                        <p class="info-card-answer">We have rehearsal or sectionals <span class="info-highlight">once a week</span>, generally Sunday afternoons. For the non-audition group, rehearsals will only be 1 1/2 hours. The upper group will stay just one more hour after the non-audition group leaves. The time commitment is small for CSO because we value your time and understand that you all are busy people.</p>
+                    </div>
+                </div>
+                <div class="info-card col-sm-3">
+                    <div class="info-card-container">
+                        <p class="info-card-question">Symphonic/Philharmonic</p>
+                        <p class="info-card-answer">Symphonic is our all-inclusive orchestra that plays easy music. Philharmonic is the other one. More info to come.</p>
+                    </div>
+                </div>
+                <div class="info-card col-sm-3">
+                    <div class="info-card-container">
+                        <p class="info-card-question">Repetoire</p>
+                        <p class="info-card-answer">We play movie music (Jurassic Park, Star Wars, How to Train Your Dragon), musical music (Phantom of the Opera, Les Miserables), and full orchestra or big band music (New World Symphony, Carmen, Mars). How do we pick what we play? <span class="info-highlight">You suggest it. You vote it. We play it.</span></p>
+                    </div>
+                </div>
+                <div class="info-card col-sm-3">
+                    <div class="info-card-container">
+                        <p class="info-card-question">Instruments</p>
+                        <p class="info-card-answer"><span class="info-highlight">All instruments are welcome.</span> We will get you a part to play no matter what instrument. Members are expected to provide their own instruments, but rentals are available in the Charlottesville area. If you need any help whatsoever, please <a href="contact.html">contact us.</a></p>
+                    </div>
+                </div>
+                <div class="info-card col-sm-3">
+                    <div class="info-card-container">
+                        <p class="info-card-question">Cost</p>
+                        <p class="info-card-answer">Dues are $35 for 1 semester or $50 for 2 semesters. Renting a heavy-duty portable stand from us costs an extra $10. You can either Venmo @CavalierSymphony-Orchestra or give cash to Michael Hilzendenger, mah3mu@virginia.edu.</p>
+                    </div>
+                </div>
+                <div class="info-card col-sm-3">
+                    <div class="info-card-container">
+                        <p class="info-card-question">Leadership Opportunities</p>
+                        <p class="info-card-answer">Section Leader. Conductor. Exec Member. Committee Member.</p>
+                    </div>
+                </div>
+                <div class="info-card col-sm-3">
+                    <div class="info-card-container">
+                        <p class="info-card-question">Other Things</p>
+                        <p class="info-card-answer">La la land</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="checklist" class="info-no-background">
+            <div class="container">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div id="precheck" class="right-light-border col-sm-6">
+                        <p class="checklist-title">To become a member</p>
+                        <ul>
+                            <li><span class="highlight">Email us</span> through the <a href="contact.html">contact page</a> to let us know you are joining. This just helps us gauge how many people we are expecting for this semester.</li>
+                            <li><span class="highlight">Pay dues</span>. You can either Venmo @CavalierSymphony-Orchestra or give cash to Michael Hilzendenger, mah3mu@virginia.edu.</li>
+                            <li><span class="highlight">Turn in forms</span>. We'll need you to fill out and sign a <a href="raw/CSO%20Photo%20Release%20Form.pdf" download>photo release form</a> and a <a href="raw/CSO%20Liability%20Form.pdf" download>liability form</a>. If you are planning to rent a stand from us, please also fill out and sign a <a href="raw/CSO%20Stand%20Rental%20Contract.pdf" download>stand rental contract</a>. Once you have completed all the necessary forms, please either scan them or give them to Virginia Cruser, vhc4cw@virginia.edu.</li>
+                        </ul>            
+                    </div>
+                    <div id="postcheck" class="col-sm-6">
+                        <p class="checklist-title">Once you're a member</p>
+                        <ul>
+                            <li><span class="highlight">Get music</span>. We will hand out music folders at the first rehearsal. If you don't receive one or need different parts, please contact Melissa Zaleski, mlz5tb@virginia.edu.</li>
+                            <li><span class="highlight">Attend rehearsals</span>. Please do attend every rehearsal you can to make the most of the time we have before our end-of-semester concert. If you know you have to miss a rehearsal, please email Virginia Cruser, vhc4cw@virginia.edu.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 		<!--#include file="footer.html"-->
+        <style>
+            #faq-background::before {
+                background-image: url(raw/IMG_3012_compressed.JPG);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            #checklist ul {
+                padding: 0;
+            }
+            #checklist li {
+                list-style: none;
+                margin: 8px 0;
+            }
+            #checklist li::before {
+                content: '';
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                background-image: url(raw/checkbox-unchecked.png);
+                background-size: cover;
+                margin-right: 4px;
+                
+            }
+            .checklist-title {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+        </style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/gm.js"></script>
-		<script type="text/javascript" src="js/joinform.js"></script>
 	</body>
 </html>
