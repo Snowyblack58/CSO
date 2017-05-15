@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Join | Cavalier Symphony Orchestra</title>
+				
+		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+		<link rel="stylesheet" href="css/cso.css">
+	</head>
+	<body>
+		<!--#include file="navbar.html"-->
+        <section id="join-step-0" class="info-section-title">
+            <div class="container">
+                <p class="gm-display2">So, you want to join CSO?</p>
+                <p class="gm-headline">Let's get you set up then!</p>
+            </div>
+        </section>
+        <section id="join-step-1" class="info-section">
+            <div class="info-title">
+                <p>Step 1. Choose your orchestra</p>
+            </div>
+            <div class="info-subtitle">
+                <p>We have two orchestras, CSO main and CSO phil. We laid out a nice, little table below so you can compare the two.</p>
+            </div>
+            <div class="container">
+                <div class="info-table">
+                    <div class="info-table-row info-table-row-title col-sm-12">
+                        <div class="itr-left col-xs-6">
+                            <p>CSO main</p>
+                        </div>
+                        <div class="itr-right col-xs-6">
+                            <p>CSO phil</p>
+                        </div>
+                    </div>
+                    <div class="info-table-row col-sm-12">
+                        <div class="itr-left col-xs-6">
+                            <p>Rehearsals are Sunday 1-2:30pm</p>
+                        </div>
+                        <div class="itr-right col-xs-6">
+                            <p>Rehearsals are Sunday 1-3:30pm</p>
+                        </div>
+                    </div>
+                    <div class="info-table-row col-sm-12">
+                        <div class="itr-left col-xs-6">
+                            <p>Plays grade 1-4 music</p>
+                        </div>
+                        <div class="itr-right col-xs-6">
+                            <p>Plays grade 3-6 music</p>
+                        </div>
+                    </div>
+                    <div class="info-table-row col-sm-12">
+                        <div class="itr-left col-xs-6">
+                            <p>No audition</p>
+                        </div>
+                        <div class="itr-right col-xs-6">
+                            <p>Audition required</p>
+                        </div>
+                    </div>
+                    <div class="info-table-row col-sm-12">
+                        <div class="itr-left col-xs-6">
+                            <p></p>
+                        </div>
+                        <div class="itr-right col-xs-6">
+                            <p>Section leader position available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="basics" class="info-section">
+            <div class="info-title">
+                <p>Step 2. Email us</p>
+            </div>
+            <div class="info-subtitle">
+                <p>Just ping us and let us know you're interested. In fact, you can just enter your name and email below and we'll put you on our mailing list!</p>
+            </div>
+            <div class="container">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Name</span>
+                    <input id="join-name" type="text" class="form-control" placeholder="ex: John Doe" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Email</span>
+                    <input id="join-email" type="text" class="form-control" placeholder="ex: orchnerd1756@gmail.com" aria-describedby="basic-addon1">
+                </div>
+                <button id="submit" type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </section>
+        
+        <style>
+            .page-background::before {
+                background-image: url(raw/IMG_9405_compressed.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .page-background {
+                min-height: inherit;
+                height: 80%;
+            }
+            .vertical-scrollbar {
+                position: fixed;
+                left: 24px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 128px;
+                background: #fff;
+                border-radius: 4px;
+                border: solid 1px #ccc;
+                z-index: 1;
+            }
+            @media(max-width: 768px){
+                .vertical-scrollbar {
+                    display: none;
+                }
+            }
+            .vertical-scrollbar a {
+                display: block;
+                width: 100%;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #000;
+            }
+            .vertical-scrollbar a:hover {
+                text-decoration: none;
+                background: #efefef;
+                border-radius: 4px;
+                color: #000;
+                
+            }
+            .vs-link {
+                width: 100%;
+                height: 64px;
+                line-height: 64px;
+            }
+            
+            #join-step-1 {
+                background: #2c3e50;
+                color: #fff;
+            }
+            #join-step-2 {
+                background: #fff;
+                color: #000;
+            }
+        </style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/gm.js"></script>
+        <script type="text/javascript" src="js/member_join_form.js"></script>
+	</body>
+</html>

@@ -38,128 +38,74 @@ p {
 /********** **********
 *      INFO CARD
 *********** *********/
-.info-title-card {
-    position: relative;
-    padding: 16px;
-    min-height: 300px;
-    height: 100%;
-    width: 100%;
-    margin-bottom: 64px;
+.info-section {
+    padding: 64px 0 64px;
 }
-.info-background .info-title-card p {
-    font-size: 64px;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-weight: 600;
-    font-family: "Satisfy", sans-serif;
-    width: 100%;
-}
-.info-no-background .info-title-card p {
-    font-size: 64px;
-    color: #000;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 600;
-    font-family: "Satisfy", sans-serif;
-    width: 100%;
-    text-align-last: center;
-}
-.info-no-background .title {
-    font-size: 64px;
-    font-weight: 600;
-    font-family: "Satisfy", sans-serif;
-    text-align: center;
-}
-.info-card {
-    position: relative;
-    min-height: 400px;
-    color: #000;
-}
-.info-card:hover .info-card-container {
-    z-index: 2;
-    outline: none;
-    box-shadow: 0 0 2px 1px #3498db;
-    opacity: 0.87;
-}
-.info-card-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 16px;
-    background: #fff;
-/*    outline: solid 1px #EFEFEF;*/
-    opacity: 0.87;
-}
-.info-card-container:hover {
-    box-shadow: 0 0 2px 1px #3498db;
-}
-.info-highlight {
-    padding: 2px;
-    border-radius: 2px;
-}
-.info-card:hover .info-highlight {
-    background: #3498db;
-    color: #fff;
-}
-.info-card-question {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: justify;
-    text-align-last: left;
-}
-.info-card-answer {
-    text-align: justify;
-    text-align-last: left;
-}
-@media(max-width: 768px){
-    .info-card {
-        min-height: 200px;
-    }
-    .info-title-card {
-        min-height: 150px;
-    }
-    .info-background .info-title-card p {
-        font-size: 32px;
-    }
-    .info-no-background .info-title-card p {
-        font-size: 32px;
-    }
-}
-/********** **********
-*   INFO SECTIONS
-*********** *********/
-.info-background {
-    margin: 0 0 200px;
-}
-
-.info-no-background {
+.info-section-title {
     text-align: justify;
     text-align-last: left;
     padding: 64px 0;
     background: #fff;
 }
-.highlight {
-    background: #3498db;
-    padding: 2px;
-    border-radius: 2px;
-    color: #fff;
+.info-section>.container {
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
-.right-light-border {
-    border-right: solid 1px #EDEDED;
+.info-section-title {
+    text-align: left;
+}
+.info-title p {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Satisfy", cursive;
+}
+.info-subtitle p {
+    font-size: 20px;
+}
+.info-card {
+    margin: 16px 0;
+}
+.info-card .col-sm-3 {
+    text-align: right;
 }
 @media(max-width: 768px){
-    .info-background {
-        margin: 0 0 100px;
+    .info-card .col-sm-3 {
+        text-align: left;
     }
-    .right-light-border {
-        border-right: none;
-    }
+}
+.info-card .col-sm-3 p {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.info-card .col-sm-9 {
+    text-align: left;
+}
+.info-card .col-sm-9 p {
+    font-size: 20px;
+}
+
+.info-table-row {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    min-height: 48px;
+}
+.info-table-row-title p {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.info-table-row-title {
+    border-bottom: solid 1px #455565;
+}
+.info-table-row p {
+    font-size: 20px;
+}
+.itr-left {
+    text-align: left;
+}
+.itr-right {
+    text-align: left;
 }
 
 /********** **********
