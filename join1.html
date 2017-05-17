@@ -22,13 +22,13 @@
             </div>
         </section>
         <section id="join-step-1" class="info-section">
-            <div class="info-title">
-                <p>Step 1. Choose your orchestra</p>
-            </div>
-            <div class="info-subtitle">
-                <p>We have two orchestras, CSO main and CSO phil. We laid out a nice, little table below so you can compare the two.</p>
-            </div>
             <div class="container">
+                <div class="info-title">
+                    <p>Step 1. <span>Choose your orchestra</span></p>
+                </div>
+                <div class="info-subtitle">
+                    <p>We have two orchestras, CSO main and CSO phil. We laid out a nice, little table below so you can compare the two.</p>
+                </div>
                 <div class="info-table">
                     <div class="info-table-row info-table-row-title col-sm-12">
                         <div class="itr-left col-xs-6">
@@ -74,14 +74,14 @@
             </div>
         </section>
         
-        <section id="basics" class="info-section">
-            <div class="info-title">
-                <p>Step 2. Email us</p>
-            </div>
-            <div class="info-subtitle">
-                <p>Just ping us and let us know you're interested. In fact, you can just enter your name and email below and we'll put you on our mailing list!</p>
-            </div>
+        <section id="join-step-2" class="info-section">
             <div class="container">
+                <div class="info-title">
+                    <p>Step 2. <span>Email us</span></p>
+                </div>
+                <div class="info-subtitle">
+                    <p>Just ping us and let us know you're interested. In fact, you can just enter your name and email below and we'll put you on our mailing list!</p>
+                </div>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Name</span>
                     <input id="join-name" type="text" class="form-control" placeholder="ex: John Doe" aria-describedby="basic-addon1">
@@ -94,52 +94,61 @@
             </div>
         </section>
         
+        <section id="join-step-2a" class="info-section">
+            <div class="container">
+                <div class="info-title">
+                    <p>Step 2a. <span>Attend an interest meeting</span></p>
+                </div>
+                <div class="info-subtitle">
+                    <p>We'll have a couple interest meetings at the start of the semester. We'll email you the details!</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="join-step-3" class="info-section">
+            <div class="container">
+                <div class="info-title">
+                    <p>Step 3. <span>Turn in forms and pay dues</span></p>
+                </div>
+                <div class="info-subtitle"></div>
+                <div class="row">
+                    <div id="forms" class="col-sm-6">
+                        <p>Fill out and return these forms to ________ by ______.</p>
+                        <a href="raw/CSO%20Liability%20Form.pdf">Liability Form</a>
+                        <a href="raw/CSO%20Photo%20Release%20Form.pdf">Photo Release Form</a>
+                        <a href="raw/CSO%20Stand%20Rental%20Contract.pdf">Stand Rental Contract*</a>
+                        <span>* Only fill if you need to rent a stand ($10/yr)</span>
+                    </div>
+                    <div id="dues" class="col-sm-6">
+                        <p>Pay dues.</p>
+                        <p>$35 for 1 semester or $50 for 2 semesters. Renting a stand costs an additional $10 for the year.</p>
+                        <p>Either Venmo @CavalierSymphony-Orchestra or give cash to Michael Hilzendeger (email/phone)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="join-background" class="page-background background-fixed">
+<!--            <img src="raw/">-->
+            <p>We can't wait to meet you!</p>
+        </div>
+		<!--#include file="footer.html"-->
         <style>
-            .page-background::before {
-                background-image: url(raw/IMG_9405_compressed.png);
+            #join-background::before {
+                background-image: url(raw/IMG_9430_compressed.png);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
             }
-            .page-background {
+            #join-background {
                 min-height: inherit;
-                height: 80%;
+                height: 50%;
             }
-            .vertical-scrollbar {
-                position: fixed;
-                left: 24px;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 128px;
-                background: #fff;
-                border-radius: 4px;
-                border: solid 1px #ccc;
-                z-index: 1;
-            }
-            @media(max-width: 768px){
-                .vertical-scrollbar {
-                    display: none;
-                }
-            }
-            .vertical-scrollbar a {
-                display: block;
-                width: 100%;
-                font-size: 14px;
+            #join-background p {
+                font-size: 48px;
+                color: #fff;
                 font-weight: 600;
-                text-transform: uppercase;
-                color: #000;
-            }
-            .vertical-scrollbar a:hover {
-                text-decoration: none;
-                background: #efefef;
-                border-radius: 4px;
-                color: #000;
-                
-            }
-            .vs-link {
-                width: 100%;
-                height: 64px;
-                line-height: 64px;
+                font-family: "Satisfy", cursive;
+                text-shadow: 0 0 4px #000;
             }
             
             #join-step-1 {
@@ -149,6 +158,36 @@
             #join-step-2 {
                 background: #fff;
                 color: #000;
+            }
+            #join-step-2a {
+                background: #fff;
+                color: #000;
+            }
+            #join-step-3 {
+                background: #2c3e50;
+                color: #fff;
+            }
+            #forms>p {
+                color: #fff;
+                text-align: left;
+                font-size: 20px;
+            }
+            #forms>a {
+                color: #fff;
+                font-size: 20px;
+                display: block;
+                text-align: left;
+                margin-left: 24px;
+            }
+            #forms>a:hover {
+                color: #fff;
+            }
+            #forms>span {
+                text-align: left;
+            }
+            #dues>p {
+                text-align: left;
+                font-size: 20px;
             }
         </style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

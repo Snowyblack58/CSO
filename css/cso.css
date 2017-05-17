@@ -47,16 +47,37 @@ p {
     padding: 64px 0;
     background: #fff;
 }
-.info-section>.container {
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
 .info-section-title {
     text-align: left;
+}
+.info-title {
+    margin-top: 32px;
+    text-align: left;
+}
+.info-subtitle {
+    text-align: left;
+    margin-bottom: 32px;
 }
 .info-title p {
     font-size: 48px;
     font-weight: 600;
+    font-family: "Roboto", sans-serif;
+}
+.info-title p span {
+    font-weight: 400;
+    font-family: "Satisfy", cursive;
+}
+.info-title-center {
+    margin-top: 32px;
+    text-align: center;
+}
+.info-title-center p {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+}
+.info-title-center p span {
+    font-weight: 400;
     font-family: "Satisfy", cursive;
 }
 .info-subtitle p {
@@ -107,6 +128,47 @@ p {
 .itr-right {
     text-align: left;
 }
+
+/********** **********
+*   VERT SCROLLBAR
+*********** *********/
+.vertical-scrollbar {
+    position: fixed;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 128px;
+    background: #fff;
+    border-radius: 4px;
+    border: solid 1px #ccc;
+    z-index: 1;
+}
+@media(max-width: 768px){
+    .vertical-scrollbar {
+        display: none;
+    }
+}
+.vertical-scrollbar a {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+}
+.vertical-scrollbar a:hover {
+    text-decoration: none;
+    background: #efefef;
+    border-radius: 4px;
+    color: #000;
+
+}
+.vs-link {
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+}
+
 
 /********** **********
 *      CALENDAR
