@@ -58,30 +58,9 @@ p {
     text-align: left;
     margin-bottom: 32px;
 }
-.info-title p {
-    font-size: 48px;
-    font-weight: 600;
-    font-family: "Roboto", sans-serif;
-}
-.info-title p span {
-    font-weight: 400;
-    font-family: "Satisfy", cursive;
-}
 .info-title-center {
     margin-top: 32px;
     text-align: center;
-}
-.info-title-center p {
-    font-size: 48px;
-    font-weight: 600;
-    font-family: "Roboto", sans-serif;
-}
-.info-title-center p span {
-    font-weight: 400;
-    font-family: "Satisfy", cursive;
-}
-.info-subtitle p {
-    font-size: 20px;
 }
 .info-card {
     margin: 16px 0;
@@ -94,33 +73,18 @@ p {
         text-align: left;
     }
 }
-.info-card .col-sm-3 p {
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
 .info-card .col-sm-9 {
     text-align: left;
 }
-.info-card .col-sm-9 p {
-    font-size: 20px;
-}
 
+.info-table-row-title {
+    border-bottom: solid 1px #455565;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
 .info-table-row {
     margin-bottom: 16px;
     padding-bottom: 16px;
-    min-height: 48px;
-}
-.info-table-row-title p {
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.info-table-row-title {
-    border-bottom: solid 1px #455565;
-}
-.info-table-row p {
-    font-size: 20px;
 }
 .itr-left {
     text-align: left;
@@ -169,6 +133,42 @@ p {
     line-height: 64px;
 }
 
+/********** **********
+*   FONT STANDARD
+********** **********/
+.fs-title {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+}
+@media(max-width: 768px){
+    .fs-title {
+        font-size: 32px;
+    }
+}
+.fs-title span {
+    font-weight: 400;
+    font-family: "Satisfy", cursive;
+}
+.fs-subtitle{
+    font-size: 20px;
+}
+.fs-content {
+    font-size: 16px;
+}
+.fs-content-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.fs-table-content {
+    font-size: 20px;
+}
+@media(max-width: 768px){
+    .fs-table-content {
+        font-size: 16px;
+    }
+}
 
 /********** **********
 *      CALENDAR
@@ -251,6 +251,7 @@ p {
 .lc-event-social {
 	background: #ffd000;
 }
+
 
 /********** **********
 *      MATERIAL
