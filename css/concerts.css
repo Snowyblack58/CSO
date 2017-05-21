@@ -16,30 +16,14 @@ h1 {
 	border: none;
 	font-family: "Open Sans", "Roboto", sans-serif;
 }
-#navbar li.active {
-	box-shadow: 0 -4px -2px #ffea00 inset;
-}
-#navbar li.active a {
-	color: #ffea00;
-}
 
 #navbar a {
 	color: #FFF;
 	background: none;
 }
-
-#navbar a:hover {
-	border: 1px solid white;
+.navbar-collapse.current {
+	color:pink;
 }
-
-#nav a.selected:link, a.selected:visited{
-	color: #ffea00;
-}
-
-#navbar .navbar-nav li:not(.active) a:hover {
-	color: #ffea00;
-}
-
 .navbar-brand {
 	padding: 5px;
 }
@@ -47,7 +31,7 @@ h1 {
 
 .container{
 	background: rgba(173, 216, 230, 1);
-	margin: 0;
+	padding: 0px 0px 0px 10px;
 	top: 0;
 	right: 0;
 	width: 100%;
@@ -58,6 +42,19 @@ h1 {
 	letter-spacing: 1.6px;
 }
 
+.navbar-header {
+	padding-left: 40px;
+	vertical-align: middle;
+}
+
+#navbar a.current {
+	border: 1px solid white;
+	line-height: 2px;
+}
+
+li.navbar-concerts {
+	margin: 8.5px 0px;
+}
 
 @media (max-device-width: 768px) {
 	#navbar li {
@@ -67,6 +64,7 @@ h1 {
 		display: none;	
 	}
 }
+
 
 /********** **********
 *     2nd Navbar
@@ -180,6 +178,9 @@ li {
 	margin-bottom: 15px;
 }
 
+#horizontalbar a.current {
+	color: #a7b2ba;
+}
 #ad {
 	display: inline-block;
 	width: 39%;
