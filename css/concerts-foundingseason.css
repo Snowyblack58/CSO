@@ -1,0 +1,114 @@
+body {
+	background: rgba(173, 200, 230, .3);
+}
+
+h1 {
+	font-family: arial;
+}
+
+
+/********** **********
+*       NAVBAR
+********** **********/
+#navbar {
+	background: black;
+	box-shadow: 0 2px 8px;
+	border: none;
+	font-family: "Open Sans", "Roboto", sans-serif;
+}
+#navbar li.active {
+	box-shadow: 0 -4px -2px #ffea00 inset;
+}
+#navbar li.active a {
+	color: #ffea00;
+}
+
+#navbar a {
+	color: #FFF;
+	background: none;
+}
+
+#navbar a:hover {
+	border: 1px solid white;
+}
+
+#nav a.selected:link, a.selected:visited{
+	color: #ffea00;
+}
+
+#navbar .navbar-nav li:not(.active) a:hover {
+	color: #ffea00;
+}
+
+.navbar-brand {
+	padding: 5px;
+}
+
+
+.container{
+	background: rgba(173, 216, 230, 1);
+	margin: 0;
+	top: 0;
+	right: 0;
+	width: 100%;
+}
+
+.navbar-collapse a {
+	font-size: 15px;
+	letter-spacing: 1.6px;
+}
+
+
+@media (max-device-width: 768px) {
+	#navbar li {
+		float: left;	
+	}
+	.navbar-header {
+		display: none;	
+	}
+}
+
+/********** **********
+*     2nd Navbar
+********** **********/
+
+/********** **********
+*       MY CODE
+********** **********/
+.buffer {
+	height: 56px;
+}
+
+ul {
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+}
+
+#horizontalbar {
+	background: white;
+	padding: 30px 0px;
+}
+#horizontalbar a {
+	color: black;
+	padding: 0px 100px 0px 0px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+}
+
+#horizontalbar a:hover {
+	color: rgb(173,200,230);
+	text-decoration: none;
+
+a:nth-child(3n) {
+	padding: 0px;
+}
+
+/********** **********
+*      SECTION 1
+********** **********/
+#rep h1 {
+	color: white; !important
+}
