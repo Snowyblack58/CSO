@@ -20,13 +20,13 @@
         </div>
         <div class="vertical-scrollbar">
             <div class="vs-link">
-                <a href="#basics">Basics</a>
+                <a href="#who">Who</a>
             </div>
             <div class="vs-link">
-                <a href="#otherinfo">Other</a>
+                <a href="#what">What</a>
             </div>
-                <div class="vs-link">
-                <a href="">Photos</a>
+            <div class="vs-link">
+                <a href="#photos">Photos</a>
             </div>
         </div>
         <section id="mission" class="info-section-title">
@@ -36,7 +36,7 @@
                 <p class="fs-subtitle">Our mission is to foster a welcoming instrumental family where students can grow musically, find a family, and shape their own musical experience</p>
             </div>
         </section>
-        <section id="basics" class="info-section">
+        <section id="who" class="info-section">
             <div class="info-title-center">
                 <p class="fs-title">Who are we?</p>
             </div>
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section id="otherinfo" class="info-section">
+        <section id="what" class="info-section">
             <div class="info-title-center">
                 <p class="fs-title">What are we?</p>
             </div>
@@ -98,6 +98,15 @@
                 </div>
             </div>
         </section>
+        <section id="photos" class="info-section">
+            <div class="info-title-center">
+                <p class="fs-title">We are CSO!</p>
+                <p class="fs-subtitle"></p>
+            </div>
+            <div id="headshots" class="row">
+                
+            </div>
+        </section>
 		<!--#include file="footer.html"-->
         <style>
             #about-background::before {
@@ -111,16 +120,46 @@
                 height: 80%;
             }
             
-            #basics {
+            #who {
                 background: #2c3e50;
                 color: #fff;
             }
-            #otherinfo {
+            #what {
                 background: #fff;
                 color: #000;
             }
+            #photos {
+                background: #2c3e50;
+                color: #fff;
+            }
+            #headshots, .headshot {
+                padding: 0;
+                margin: 0;
+            }
+            .headshot img {
+                width: 100%;
+            }
+            
         </style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/gm.js"></script>
+        <script>
+            $(document).ready(function(){
+                $.ajax({
+                    url: 'php/create-gallery.php',
+                    type: 'POST',
+                    success: function(data){
+                        $('#headshots').append(data);
+                    }
+                })
+            });
+            $(window).on('scroll',function(){
+                if(window.pageYOffset > $('#who').offset().top) {
+                    $('#about-background').css('visibility', 'hidden');
+                } else {
+                    $('#about-background').css('visibility', 'visible');
+                }
+            })
+        </script>
 	</body>
 </html>
