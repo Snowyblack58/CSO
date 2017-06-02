@@ -548,3 +548,7 @@ p {
 .footer img {
     opacity: 0.54;
 }
+
+.home-content-overlay {
+	background-color: rgba(0,0,0,0.5);
+}
