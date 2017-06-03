@@ -1,0 +1,92 @@
+@font-face {
+    font-family: kollektif;
+    src: url('fonts/Kollektif.ttf');
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url('fonts/Kollektif-Italic.ttf');
+    font-weight: italic;
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url('fonts/Kollektif-BoldItalic.ttf');
+    font-weight: bold-italic;
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url('fonts/Kollektif-Bold.ttf');
+    font-weight: bold;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+
+p.fs-title, #join-step-2a {
+  margin-left: 50px;
+  font-family: 'arial';
+  font-size: 50px;
+  color:	#D5AD6D !important; /*if no support for background-clip*/
+	
+	background: -webkit-linear-gradient(transparent, transparent),
+             -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.infowhite {
+  background-color: white;
+}
+
+.infoblack {
+  background-color: black;
+}
+
+p.gm-subheading-footer-title, .footer-title, .gm-subheader {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.col-sm-4 {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+}
+
+.footer-look-listen {
+
+}
+
+.footer {
+  font-family: 'kollektif';
+}
+
+.row {
+  display: block;
+  width: 82%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.footer-disclaimer {
+  width: 97.5%;
+}
+
+.footer-list {
+  padding-left: 0;
+  margin-top: 0;
+
+}
+
+li.sm-logo{
+  margin-top: 0;
+}
+
+#spotify {
+  margin-top: 10px;
+}
+#youtube {
+  margin-top: 10px;
+}

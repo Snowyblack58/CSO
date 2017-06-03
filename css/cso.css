@@ -527,7 +527,7 @@ p {
 	text-align: left;
 }
 .footer-list {
-	padding-left: 16px;
+	text-align: left;
 	list-style: none;
 }
 .footer-list li {
