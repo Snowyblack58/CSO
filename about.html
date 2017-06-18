@@ -145,13 +145,13 @@
 		<script type="text/javascript" src="js/gm.js"></script>
         <script>
             $(document).ready(function(){
-                $.ajax({
-                    url: 'php/create-gallery.php',
-                    type: 'POST',
-                    success: function(data){
-                        $('#headshots').append(data);
-                    }
-                })
+                // $.ajax({
+                //     url: 'php/create-gallery.php',
+                //     type: 'POST',
+                //     success: function(data){
+                //         $('#headshots').append(data);
+                //     }
+                // })
             });
             $(window).on('scroll',function(){
                 if(window.pageYOffset > $('#who').offset().top) {
