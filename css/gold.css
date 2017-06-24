@@ -1,44 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,600,700,800,900|Roboto|Satisfy|Arvo');
+
+
 @font-face {
-    font-family: kollektif;
-    src: url('fonts/Kollektif.ttf');
+  font-family: bodoni;
+  src: url('../fonts/Bodoni.ttf');
 }
 
 @font-face {
     font-family: kollektif;
-    src: url('fonts/Kollektif-Italic.ttf');
+    src: url('../fonts/Kollektif.ttf');
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url('../fonts/Kollektif-Italic.ttf');
     font-weight: italic;
 }
 
 @font-face {
     font-family: kollektif;
-    src: url('fonts/Kollektif-BoldItalic.ttf');
+    src: url('../fonts/Kollektif-BoldItalic.ttf');
     font-weight: bold-italic;
 }
 
 @font-face {
     font-family: kollektif;
-    src: url('fonts/Kollektif-Bold.ttf');
+    src: url('../fonts/Kollektif-Bold.ttf');
     font-weight: bold;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Arvo);
 
-p.fs-title, #join-step-2a {
-  margin-left: 50px;
-  font-family: 'arial';
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+h1.fs-title, #join-step-2a {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-family: 'bodoni';
   font-size: 50px;
-  color:	#D5AD6D !important; /*if no support for background-clip*/
-	
-	background: -webkit-linear-gradient(transparent, transparent),
-             -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
-	background: -o-linear-gradient(transparent, transparent);
-	-webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+
+}
+
+h1.main-title {
+  font-size: 100px;
+  margin: 0;
+}
+
+
+.main-title.shadow { 
+   margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.main-title-container {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .infowhite {
   background-color: white;
 }
+
+.info-title {
+  position: relative;
+}
+
+.top {
+  z-index: 2;
+  position: relative;
+   color: #D5AD6D !important; /*if no support for background-clip*/
+  background: -webkit-linear-gradient(transparent, transparent),
+             -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shadow {
+  z-index: 1;
+  top: 0px;
+  text-shadow: 3px 3px 5px rgba(201,181,150,.7);
+  position: absolute;
+  color: white !important;
+}
+
 
 .infoblack {
   background-color: black;
@@ -94,4 +144,18 @@ li.sm-logo{
 
 .imptppl {
   font-weight: bold-italic;
+}
+
+.fs-content-title {
+  font-weight: 1000;
+}
+
+.fs-subtitle {
+  padding-left: 30px;
+}
+
+.input-group {
+  padding: 0px 30px;
+  box-sizing: border-box;
+/*  border: 1px solid pink;*/
 }
