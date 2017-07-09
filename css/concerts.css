@@ -238,7 +238,11 @@ li {
 *      SECTION 1 Spring 2016
 ********** **********/
 #spring2016page {
-	background: url('../raw/bkg-spr16-02-01.png');
+	background: black;
+}
+
+.black {
+	background: url('../raw/bkg-spr16-02-01.png') no-repeat;
 	background-size: 100%;
 }
 
