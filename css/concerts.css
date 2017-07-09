@@ -1,5 +1,16 @@
+@font-face {
+	font-family: bodonismallcaps;
+	src: url('../fonts/bodoni-be-regular-small-caps-amp-oldstyle-figures.ttf');
+}
+
+
+@font-face {
+	font-family: LemonMilk;
+	src: url('../fonts/LemonMilk.otf');
+}
+
 body, html{
-	background: rgba(170, 216, 230, 1);
+	
 }
 
 h1 {
@@ -30,7 +41,7 @@ h1 {
 
 
 .container{
-	background: rgba(173, 216, 230, 1);
+	background: #120c16;
 	padding: 0px 0px 0px 10px;
 	top: 0;
 	right: 0;
@@ -65,7 +76,6 @@ li.navbar-concerts {
 	}
 }
 
-
 /********** **********
 *     2nd Navbar
 ********** **********/
@@ -79,10 +89,14 @@ li.navbar-concerts {
 
 ul {
 	text-align: center;
+	display: flex;
+	padding: 0px 25%;
+	justify-content: space-around;
+	list-style: none;
 }
 
 li {
-	display: inline-block;
+	list-style: none;
 }
 
 #horizontalbar {
@@ -91,7 +105,6 @@ li {
 }
 #horizontalbar a {
 	color: black;
-	padding: 0px 100px 0px 0px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 20px;
 }
@@ -109,7 +122,7 @@ li {
 /********** **********
 *      SECTION 1
 ********** **********/
-#section1 {
+.section1 {
 	padding: 20px 20px 0px 20px;
 	vertical-align: top;
 	display: block;
@@ -119,20 +132,20 @@ li {
 	color: white;
 	margin-left: 5%;
 	font-family: 'Open Sans Condensed', sans-serif;
-	display: inline-block;
-	width: 50%;
+	text-align: center;
 	vertical-align: top;
 }
 
+
 #rep h1 {
-	font-size: 100px;
+	font-size: 8vmax;
 	font-family: 'Open Sans Condensed', sans-serif;
 	margin: 50px 0px 40px 0;
 }
 
 #rep li {
-	font-size: 50px;
 	margin-bottom: 30px;
+	font-size: 5vmax;
 }
 
 #ad {
@@ -141,6 +154,8 @@ li {
 	vertical-align: top;
 	margin: 33px 0px 0px 0px;
 }
+
+
 
 #ad img {
 	display: block;
@@ -152,8 +167,11 @@ li {
 /********** **********
 *      SECTION 1 Spring 2017
 ********** **********/
-#section1 {
-	padding: 20px 5% 0px 5%;
+#spr17page {
+	background: url('../raw/ConcertTileBackground_Odyssey-01.png');
+}
+.section1 {
+	padding: 20px 5% 40px 0px;
 	vertical-align: top;
 	display: block;
 }
@@ -162,14 +180,13 @@ li {
 	color: white;
 	margin-left: 5%;
 	font-family: 'Open Sans Condensed', sans-serif;
-	display: inline-block;
-	width: 50%;
+	text-align: center;
 	vertical-align: top;
 }
 
 #reps17 h1 {
-	font-size: 100px;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 8vmax;
+	font-family: 'LemonMilk';
 	margin: 50px 0px 40px 0;
 }
 
@@ -198,7 +215,7 @@ li {
 .section2 {
 	text-align: center;
 	display: block;
-	padding: 5% 5% 2% 5%;
+	padding: 0% 5% 2% 5%;
 	width: 100%;
 }
 
@@ -208,6 +225,37 @@ li {
 	width: 90%;
 	display: block;
 }
+
+/********** **********
+*      SECTION 1 Fall 2016
+********** **********/
+#fall2016page {
+	background-image: url('../raw/ConcertTile_MovieMusic-01.png');
+}
+
+
+/********** **********
+*      SECTION 1 Spring 2016
+********** **********/
+#spring2016page {
+	background: url('../raw/bkg-spr16-02-01.png');
+	background-size: 100%;
+}
+
+#spr16-header {
+	font-family: 'bodonismallcaps' !important;
+}
+
+.spr16rep {
+	padding-top: 10vmax;
+}
+
+#odyssey {
+	
+	text-align: center;
+}
+
+
 /********** **********
 *   SLIDESHOW
 ********** **********/
@@ -228,3 +276,32 @@ li {
 	width: 13px;
 	padding: 0;
 }
+
+.w3-display-container,.w3-content {
+	padding-bottom: 60px;
+}
+
+
+@media screen and (max-width:600px){
+.spr16rep {
+	padding-top: 5vmax;
+}
+
+ul {
+	padding: 0 15%;
+}
+
+#horizontalbar a {
+	font-size: 4vmax;
+}
+}
+
+
+
+@media screen and (max-width:500px){
+img#odyssey {
+	width: 100%;
+}
+}
+
+
