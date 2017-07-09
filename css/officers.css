@@ -8,7 +8,7 @@ body, html{
 /********** **********
 *       NAVBAR
 ********** **********/
-#navbar {
+/*#navbar {
 	background: black;
 	box-shadow: 0 2px 8px;
 	border: none;
@@ -58,7 +58,7 @@ li.navbar-concerts {
 /********** **********
 *      SECTION 1
 ********** **********/
-.buffer {
+/*.buffer {
 	height: 56px;
 }
 
@@ -94,6 +94,7 @@ p {
 	font-family: 'Montserrat', sans-serif;
 	text-align: left;
 }
+<<<<<<< Updated upstream
 
 .exec {
 	display: flex;
@@ -161,10 +162,13 @@ th {
 	vertical-align: bottom !important;
 }
 
+=======
+*/
+>>>>>>> Stashed changes
 /********** **********
 *   RESPONSIVENESS
 ********** **********/
-
+/*
 @media screen and (max-width: 1500px) {
 
 h1 {
@@ -198,6 +202,18 @@ h2 {
 	margin: 20px auto;
 }
 
+<<<<<<< Updated upstream
+=======
+.exec:nth-child(3n){
+	margin-right: 0%;
+}
+
+.exec:nth-child(3n-2){
+	margin-left: 0%;
+}
+}
+
+>>>>>>> Stashed changes
 
 @media screen and (max-width: 870px) {
 
@@ -219,5 +235,55 @@ h2 {
 }
 
 
+<<<<<<< Updated upstream
+=======
+.exec:nth-child(2n-1) {
+	margin: 2% 5% 2% 0%;
+}
+}*/
 
 
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+>>>>>>> Stashed changes
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.exec {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
