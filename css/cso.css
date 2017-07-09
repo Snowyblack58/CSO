@@ -1,3 +1,44 @@
+@font-face {
+  font-family: bodoni;
+  src: url('../fonts/Bodoni.ttf');
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url('../fonts/Kollektif.ttf');
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url('../fonts/Kollektif-Italic.ttf');
+    font-weight: italic;
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url('../fonts/Kollektif-BoldItalic.ttf');
+    font-weight: bold-italic;
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url('../fonts/Kollektif-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+  font-family: bodonismallcaps;
+  src: url('../fonts/bodoni-be-regular-small-caps-amp-oldstyle-figures.ttf');
+}
+
+
+@font-face {
+  font-family: LemonMilk;
+  src: url('../fonts/LemonMilk.otf');
+}
+
+
+
 html, body {
 	width: 100%;
 	height: 100%;

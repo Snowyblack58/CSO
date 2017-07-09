@@ -1,29 +1,43 @@
 @font-face {
-  font-family: bodoni;
-  src: url('../fonts/Bodoni.ttf');
+    font-family: bodoni-st;
+    src: url('../fonts/BodoniSvtyTwoITCTT-Book.ttf');
+    font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: kollektif;
-    src: url('../fonts/Kollektif.ttf');
-}
-
-@font-face {
-    font-family: kollektif;
-    src: url('../fonts/Kollektif-Italic.ttf');
-    font-weight: italic;
-}
-
-@font-face {
-    font-family: kollektif;
-    src: url('../fonts/Kollektif-BoldItalic.ttf');
-    font-weight: bold-italic;
-}
-
-@font-face {
-    font-family: kollektif;
-    src: url('../fonts/Kollektif-Bold.ttf');
+    font-family: bodoni-st;
+    src: url('../fonts/BodoniSvtyTwoITCTT-Bold.ttf');
     font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: bodoni-st;
+    src: url('../fonts/BodoniSvtyTwoITCTT-BookIta.ttf');
+    font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+    font-family: bodoni-sc-st;
+    src: url('../fonts/BodoniSvtyTwoOSITCTT-Book.ttf.ttf');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: bodoni-st;
+    src: url('../fonts/BodoniSvtyTwoOSITCTT-Bold.ttf');
+    font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: bodoni-st;
+    src: url('../fonts/BodoniSvtyTwoOSITCTT-BookIt.ttf');
+    font-weight: normal;
+	font-style: italic;
 }
 
 @font-face {
@@ -42,27 +56,41 @@
 body, html{
 	  /* background: -webkit-radial-gradient(#ffc , #ffc440);
     background: radial-gradient(#ffc , #ffc440);*/
-    background: #ffc440; /* Old browsers */
-background: -moz-linear-gradient(left, #ffc440 0%, #ffeabc 29%, #ffc440 43%, #ffc440 47%, #ffc440 53%, #ffeabc 68%, #ffda8c 82%, #ffda8c 82%, #ffc440 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #ffc440 0%,#ffeabc 29%,#ffc440 43%,#ffc440 47%,#ffc440 53%,#ffeabc 68%,#ffda8c 82%,#ffda8c 82%,#ffc440 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #ffc440 0%,#ffeabc 29%,#ffc440 43%,#ffc440 47%,#ffc440 53%,#ffeabc 68%,#ffda8c 82%,#ffda8c 82%,#ffc440 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc440', endColorstr='#ffc440',GradientType=1 ); /* IE6-9 */
+    background: #white; /* Old browsers */
+	background: -moz-linear-gradient(left, #ffc440 0%, #ffeabc 29%, #ffc440 43%, #ffc440 
+	47%, #ffc440 53%, #ffeabc 68%, #ffda8c 82%, #ffda8c 82%, #ffc440 100%); 
+	background: -webkit-linear-gradient(left, #ffc440 0%,#ffeabc 29%,#ffc440 43%,#ffc440 
+	47%,#ffc440 53%,#ffeabc 68%,#ffda8c 82%,#ffda8c 82%,#ffc440 100%); 
+	background: linear-gradient(to right, #ffc440 0%,#ffeabc 29%,#ffc440 43%,#ffc440 47%,
+	#ffc440 53%,#ffeabc 68%,#ffda8c 82%,#ffda8c 82%,#ffc440 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc440', endColorstr='#ffc440',GradientType=1 );
 	color: black;
 	font-family: 'arial', sans-serif;
 	font-size: 10px	;
 /*	filter: blur(1px);*/
 }
 
+.intro {
+	display: flex;
+	flex-flow: column-reverse;
+}
+
 h1 {
-	font:  30px 'kollektif', sans-serif ;
+	font: small-caps bold 50px 'bodoni-sc-st';
+	margin: 0 0 10px 0;
+}
+
+h3 {
+	font: small-caps bold 60px 'bodoni-sc-st';
 }
 
 h2 {
-	font: 20px 'Montserrat', sans-serif;
+	font: 26px 'bodoni-st';
+	margin: 0;
 }
 
 p {
-	font: 16px 'Montserrat', sans-serif;
+	font: 16px 'bodoni-st';
 	margin-bottom: 5px;
 }
 
@@ -164,7 +192,7 @@ li.navbar-concerts {
 
 .text {
   color: black;
-  font-size: 18px;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -210,4 +238,11 @@ h1.boldthis {
 
 .question-posed {
 	font-weight: 900;
+}
+
+.exec-title {
+	font: small-caps bold 70px 'bodoni-sc-st';
+	display: block;
+	width: 100%;
+	text-align: center;
 }
