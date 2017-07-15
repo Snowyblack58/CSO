@@ -10,9 +10,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Roboto|Satisfy" rel="stylesheet">
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+		
+
+		<link rel="stylesheet" href="css/cso.css">
 		<link rel="stylesheet" href="css/concerts.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
 		 <script src="js/slideshow.js"></script>
 		 <script src="js/navbar2.js"></script>
 	<title></title>
@@ -42,12 +46,12 @@
 
 <div class="buffer"></div>
 
-<nav id='horizontalbar'>
-		<ul>
-			<li><a href="concerts.html">Founding Season</a></li>
-			<li><a class="current" href="concert-fall2016.html">Fall 2016</a></li>
-			<li><a href="concert-spring2017.html">Spring 2017</a></li>
-		</ul>
+<nav id='horizontalbar' class='mynavbar'>
+        <ul>
+            <li><a href="concerts.html">Founding Season</a></li>
+            <li><a class="current" href="concert-fall2016.html">Fall 2016</a></li>
+            <li><a href="concert-spring2017.html">Spring 2017</a></li>
+        </ul>
 </nav>
 <div class="thepage" id="fall2016page">
 <div class="section1" id="fall2016">
@@ -82,15 +86,12 @@
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
-
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
 function currentDiv(n) {
   showDivs(slideIndex = n);
 }
-
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");

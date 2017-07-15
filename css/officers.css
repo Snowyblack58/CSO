@@ -54,20 +54,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
 
 body, html{
-	  /* background: -webkit-radial-gradient(#ffc , #ffc440);
-    background: radial-gradient(#ffc , #ffc440);*/
-    background: #white; /* Old browsers */
-	background: -moz-linear-gradient(left, #ffc440 0%, #ffeabc 29%, #ffc440 43%, #ffc440 
-	47%, #ffc440 53%, #ffeabc 68%, #ffda8c 82%, #ffda8c 82%, #ffc440 100%); 
-	background: -webkit-linear-gradient(left, #ffc440 0%,#ffeabc 29%,#ffc440 43%,#ffc440 
-	47%,#ffc440 53%,#ffeabc 68%,#ffda8c 82%,#ffda8c 82%,#ffc440 100%); 
-	background: linear-gradient(to right, #ffc440 0%,#ffeabc 29%,#ffc440 43%,#ffc440 47%,
-	#ffc440 53%,#ffeabc 68%,#ffda8c 82%,#ffda8c 82%,#ffc440 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc440', endColorstr='#ffc440',GradientType=1 );
-	color: black;
-	font-family: 'arial', sans-serif;
-	font-size: 10px	;
-/*	filter: blur(1px);*/
+  /* background: -webkit-radial-gradient(#ffc , #ffc440);
+     background: radial-gradient(#ffc , #ffc440);*/
+     background: #ffc440; /* Old browsers */
+ background: -moz-linear-gradient(left, #ffc440 0%, #ffeabc 29%, #ffc440 43%, #ffc440 47%, #ffc440 53%, #ffeabc 68%, #ffda8c 82%, #ffda8c 82%, #ffc440 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(left, #ffc440 0%,#ffeabc 29%,#ffc440 43%,#ffc440 47%,#ffc440 53%,#ffeabc 68%,#ffda8c 82%,#ffda8c 82%,#ffc440 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to right, #ffc440 0%,#ffeabc 29%,#ffc440 43%,#ffc440 47%,#ffc440 53%,#ffeabc 68%,#ffda8c 82%,#ffda8c 82%,#ffc440 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc440', endColorstr='#ffc440',GradientType=1 ); /* IE6-9 */
+ 	color: black;
+ 	font-family: 'arial', sans-serif;
+ 	font-size: 10px	;
+ /*	filter: blur(1px);*/
 }
 
 .intro {

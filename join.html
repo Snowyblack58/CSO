@@ -10,9 +10,7 @@
 		<title>Join | Cavalier Symphony Orchestra</title>
 				
 		
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,600,700,800,900|Roboto|Satisfy" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Montserrat:300,300i,400,500,600,700,800,900|Roboto|Satisfy" rel="stylesheet">
 		<link rel="stylesheet" href="css/cso.css">
         <link rel="stylesheet" type="text/css" href="css/gold.css">
 	</head>
@@ -20,19 +18,19 @@
 		<!--#include file="navbar.html"-->
         <section id="join-step-0" class="info-section infowhite">
             <div class="container">
-                <div class="info-title main-title-container">
-                    <h1 class="fs-title top main-title">So, you want to join CSO?</h1>
-                    <h1 class="fs-title shadow main-title">So, you want to join CSO?</h1>
+                <div class="info-title main-title-container" id='landing-title'>
+                    <h1 class="fs-title top main-title">So, you want to <br><span class='special'> join cso?</span></h1>
+                    <h1 id='nomargin' class="fs-title shadow main-title">So, you want to <br><span class='special'> join cso?</span></h1>
                 </div>
-                <div class="horizontal-border"></div>
-                <p class="fs-subtitle">Let's get you set up then!</p>
+                <div class="horizontal-border special"></div>
+                <p class="fs-subtitle setup">Let's get you set up then!</p>
             </div>
         </section>
         <section id="join-step-1" class="info-section infoblack">
             <div class="container">
                 <div class="info-title">
-                    <h1 class="fs-title">Step 1. <span>Choose your orchestra</span></h1>
-                    <h1 class="fs-title shadow">Step 1. <span>Choose your orchestra</span></h1>
+                    <h1 class="fs-title top">Step 1. <span>Choose your orchestra</span></h1>
+                    <h1 class="fs-title shadow lessen">Step 1. <span>Choose your orchestra</span></h1>
                 </div>
                 <div class="info-subtitle">
                     <p class="fs-subtitle">We have two orchestras, CSO main and CSO phil. All members are part of CSO main. A subset of CSO main are then part of CSO phil. We laid out a nice, little table below so you can compare the two.</p>
@@ -40,10 +38,10 @@
                 <div class="info-table">
                     <div class="row info-table-row info-table-row-title col-sm-12">
                         <div class="itr-left col-xs-6">
-                            <p class="fs-content-title">CSO main</p>
+                            <h3 class="fs-content-title">CSO main</h3>
                         </div>
                         <div class="itr-right col-xs-6">
-                            <p class="fs-content-title">CSO phil</p>
+                            <h3 class="fs-content-title">CSO phil</h3>
                         </div>
                     </div>
                     <div class="row info-table-row col-sm-12">
@@ -93,7 +91,7 @@
         <section id="join-step-2" class="info-section infowhite">
             <div class="container">
                 <div class="info-title">
-                    <h1 class="fs-title top">Step 2. <span>Email us</span></h1>
+                    <h1 class="fs-title top" id='offsetgradient'>Step 2. <span>Email us</span></h1>
                     <h1 class="fs-title shadow">Step 2. <span>Email us</span></h1>
                 </div>
                 <div class="info-subtitle">
@@ -117,6 +115,7 @@
                     <h1 class="fs-title top">Step 2a. <span>Attend an interest meeting</span></h1>
                     <h1 class="fs-title shadow">Step 2a. <span>Attend an interest meeting</span></h1>
                 </div>
+            
                 <div class="info-subtitle">
                     <p class="fs-subtitle">We'll have a couple interest meetings at the start of the semester. We'll email you the details!</p>
                 </div>
@@ -144,9 +143,13 @@
                 </div>
             </div>
         </section>
+        
         <div id="join-background" class="page-background background-fixed">
 <!--            <img src="raw/">-->
-            <p>We can't wait to meet you!</p>
+           <div class='info-title'>
+            <h4 class='top'>We can't wait to meet you!</p>
+            <h4 class='shadow'>We can't wait to meet you!</p>
+            </div>
         </div>
 		<!--#include file="footer.html"-->
         <style>
@@ -176,7 +179,7 @@
                 color: #000;
             }
             #join-step-2a {
-
+                padding-top: 0;
                 color: #000;
             }
             #join-step-3 {

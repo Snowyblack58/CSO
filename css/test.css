@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: bodoni-st;
+    src: url('../fonts/BodoniSvtyTwoITCTT-Book.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.box {
+    height: 200px;
+    margin: 20px;
+    width: 200px;
+	background: -webkit-linear-gradient(transparent, transparent),
+             -webkit-linear-gradient(top, 
+/*                 rgba(226,186,120,1) 0%, */
+                 rgba(163,126,67,1) 0%, 
+                 rgba(145,112,59,1) 10%,
+                 rgba(213,173,109,1) 40%, 
+                 rgba(213,173,109,1) 50%,
+                 rgba(213,173,109,1) 60%,
+                 rgba(145,112,59,1) 92%,
+                  rgba(163,126,67,1) 100% 
+             );
+
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+     margin: 20px;
+	background: -webkit-linear-gradient(transparent, transparent),
+             -webkit-linear-gradient(top, 
+                 rgba(213,173,109,1) 0%, 
+                 rgba(213,173,109,1) 26%, 
+                 rgba(226,186,120,1) 35%, 
+                 rgba(163,126,67,1) 45%, 
+                 rgba(145,112,59,1) 61%, 
+                 rgba(213,173,109,1) 100%);
+
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: 'bodoni-st';
+}

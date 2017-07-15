@@ -30,23 +30,29 @@
     font-weight: bold;
 }
 
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+@font-face {
+    font-family: museosans;
+    src: url('../fonts/MuseoSans_900.otf')
+    font-weight: 900;
 }
+
+@font-face {
+    font-family: museosans;
+    src: url('../fonts/MuseoSans_300.otf')
+    font-weight: 300;
+}
+
 h1.fs-title, #join-step-2a {
   margin-left: 20px;
   margin-bottom: 10px;
-  font-family: 'bodoni';
   font-size: 50px;
-  font-weight: bold;
-
+    padding-bottom: 10px
 }
 
 h1.main-title {
   font-size: 100px;
   margin: 0;
+    line-height: 1.3em;
 }
 
 
@@ -66,19 +72,56 @@ h1.main-title {
   background-color: white;
 }
 
-.info-title {
-  position: relative;
+
+h1, h2, h3, h4 {
+
+  color:	#D5AD6D; /*if no support for background-clip*/
+	
+		background: -webkit-linear-gradient(transparent, transparent),
+             -webkit-linear-gradient(30deg, 
+/*                 rgba(226,186,120,1) 0%, */
+                 rgba(163,126,67,1) 0%, 
+                 rgba(145,112,59,1) 20%,
+                 rgb(239, 194, 121) 40%, 
+                 rgb(239, 194, 121) 43%,
+                 rgba(213,173,109,1) 45%,
+                 rgba(213,173,109,1) 50%,
+                 rgba(145,112,59,1) 60%,
+                  rgb(173, 136, 78) 80%,
+                  rgba(163,126,67,1) 100% 
+             );
+
+    
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+    
+
+h1#offsetgradient {
+    	background: -webkit-linear-gradient(transparent, transparent),
+             -webkit-linear-gradient(left, 
+/*                 rgba(226,186,120,1) 0%, */
+                 rgba(163,126,67,1) 0%, 
+                 rgba(145,112,59,1) 10%,
+                 rgb(239, 194, 121) 22%, 
+                 rgb(239, 194, 121) 23%,
+                 rgba(213,173,109,1) 29%,
+                 rgba(213,173,109,1) 33%,
+                 rgba(145,112,59,1) 35%,
+                  rgb(173, 136, 78) 50%,
+                  rgba(163,126,67,1) 100% 
+             );
+       
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .top {
-  z-index: 2;
+  z-index: 10;
   position: relative;
-   color: #D5AD6D !important; /*if no support for background-clip*/
-  background: -webkit-linear-gradient(transparent, transparent),
-             -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
-  background: -o-linear-gradient(transparent, transparent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    display: block;
 }
 
 .shadow {
@@ -154,8 +197,44 @@ li.sm-logo{
   padding-left: 30px;
 }
 
+.setup {
+    font-family: 'museosans'
+    font-weight: 900;
+}
+
 .input-group {
   padding: 0px 30px;
   box-sizing: border-box;
 /*  border: 1px solid pink;*/
+}
+
+h1.fs-title.shadow {
+    margin: 0px 0px 10px 20px;
+}
+
+.fs-title span.special {
+    font-size: 200px;
+        letter-spacing: .03em;
+}
+
+#nomargin {
+    margin: 0px !important;
+}
+
+.lessen {
+    text-shadow: 1px 3px 5px rgba(144, 130, 107, 0.7);
+}
+
+#faq {
+	padding: 16px;
+}
+
+
+h1.fs-title.top.main-title, .fs-title.main-title.shadow{
+    font-family: 'bodoni' !important;
+}
+
+
+h4.top, h4.shadow {
+    font-size: 60px
 }
