@@ -49,6 +49,11 @@ h1.fs-title, #join-step-2a {
     padding-bottom: 10px
 }
 
+#join-step-2a {
+    margin-left: 0px !important;
+    margin-bottom: 0;
+}
+
 h1.main-title {
   font-size: 100px;
   margin: 0;
@@ -237,4 +242,8 @@ h1.fs-title.top.main-title, .fs-title.main-title.shadow{
 
 h4.top, h4.shadow {
     font-size: 60px
+}
+
+#backinblack {
+    -webkit-text-fill-color: white;
 }
