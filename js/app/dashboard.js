@@ -4,12 +4,21 @@ define([
     'text!../../partials/card-container.html',
     'text!../../partials/form-content.html',
     'json!../../json/dashboard-forms.json'
-], function($, _, CardContainerTemplate, FormsTemplate, formsJson){
-    var newCardContainerTemplate = _.template(CardContainerTemplate);
-    var newCardContainerHtml = newCardContainerTemplate();
-    $('#main-content').append(newCardContainerHtml);
+], function($, _, CardContainerTemplate, FormsTemplate, FormsJson){
+    $(document).ready(function(){
+        createCardView();
+        loadCardViewContent(FormsTemplate, FormsJson);
+    });
 
-    var newFormContentTemplate = _.template(FormsTemplate);
-    var newFormContentHtml = newFormContentTemplate(formsJson);
-    $('.content-container').append(newFormContentHtml);
+    function createCardView() {
+        var newCardContainerTemplate = _.template(CardContainerTemplate);
+        var newCardContainerHtml = newCardContainerTemplate();
+        $('#main-content').append(newCardContainerHtml);
+    }
+
+    function loadCardViewContent(template, json) {
+        var newContentTemplate = _.template(template);
+        var newContentHtml = newContentTemplate(json);
+        $('.content-container').html(newContentHtml);
+    }
 });

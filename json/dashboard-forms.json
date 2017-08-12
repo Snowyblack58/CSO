@@ -5,22 +5,32 @@
             "forms": [
                 {
                     "name": "Photo release form",
-                    "link": "",
-                    "isDownload": true
+                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSeptzHjkYSemOcvf5X3q4czO9EGVNwiBkjktx6f3ZFBmqzJvw/viewform?usp=sf_link",
+                    "isDownload": false
                 },
                 {
-                    "name": "Photo release form",
-                    "link": "",
+                    "name": "Liability form",
+                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSd-mp6mBovm9OavUNSbH1fJ3mJOiPLhZprqBFkBV4PObep9BQ/viewform?usp=sf_link",
+                    "isDownload": false
+                },
+                {
+                    "name": "Stand rental contract (opt.)",
+                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSfDfeqwYJj2GGBbb_gu8kWtPYTy54ES44jsXCUUgrYVWXlgfQ/viewform?usp=sf_link",
                     "isDownload": false
                 }
             ]
         },
         {
-            "title": "To audition",
+            "title": "To audition for phil & section leader",
             "forms": [
                 {
+                    "name": "Audition packet",
+                    "link": "#audition",
+                    "isDownload": false
+                },
+                {
                     "name": "Audition slot signup",
-                    "link": "",
+                    "link": "https://docs.google.com/forms/d/1_HxbavaPRcTGGU11q47601ZHJKFjQZvA8AQqnTATUmc/edit",
                     "isDownload": false
                 }
             ]

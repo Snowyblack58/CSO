@@ -1,11 +1,31 @@
-<div id="form-card-title">Forms</div>
 <% _.each(sections, function(section) { %>
-<div class="form-card-section-container">
+<div class="form-card-section-container col-sm-6">
     <p class="form-card-section-title"><%= section.title %></p>
-    <ul>
+    <ul class="form-card-ul">
         <% _.each(section['forms'], function(form){ %>
-        <li><a href="<%= form.title %>" <% if(form.isDownload){ %>download<%}%>><%= form.name %></a></li>
+        <li class="form-card-li"><a href="<%= form.link %>" <% if(form.isDownload){ %>download<%}%>><%= form.name %></a></li>
         <% }) %>
     </ul>
 </div>
 <% }); %>
+<style>
+    p.form-card-section-title {
+        font-size: 1.25rem;
+        font-style: italic;
+        font-weight: 600;
+    }
+    p.form-card-section-title:after {
+        content: "...";
+    }
+    ul.form-card-ul {
+        padding: 0 0 0 1rem;
+    }
+    li.form-card-li {
+        list-style: none;
+        margin: 0.5rem 0 0;
+    }
+    .form-card-li a {
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
