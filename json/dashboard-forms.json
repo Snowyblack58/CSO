@@ -1,0 +1,29 @@
+{
+    "sections": [
+        {
+            "title": "To join",
+            "forms": [
+                {
+                    "name": "Photo release form",
+                    "link": "",
+                    "isDownload": true
+                },
+                {
+                    "name": "Photo release form",
+                    "link": "",
+                    "isDownload": false
+                }
+            ]
+        },
+        {
+            "title": "To audition",
+            "forms": [
+                {
+                    "name": "Audition slot signup",
+                    "link": "",
+                    "isDownload": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+<div id="form-card-title">Forms</div>
+<% _.each(sections, function(section) { %>
+<div class="form-card-section-container">
+    <p class="form-card-section-title"><%= section.title %></p>
+    <ul>
+        <% _.each(section['forms'], function(form){ %>
+        <li><a href="<%= form.title %>" <% if(form.isDownload){ %>download<%}%>><%= form.name %></a></li>
+        <% }) %>
+    </ul>
+</div>
+<% }); %>
