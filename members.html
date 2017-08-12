@@ -22,70 +22,24 @@
                 <p class="fs-subtitle">(under construction, enter only if you have your hard hat)</p>
             </div>
         </section>
-        <section id="calendar" class="info-section">
+        <section id="main">
             <div class="container">
-                <div class="col-sm-12"><iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=oh0frbjakmq0dcpf1582l54350%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FNew_York" style="border-width:0; min-height: 400px" width="100%" frameborder="0" scrolling="no"></iframe></div>
+                <div class="form-group" id="content-selector-container">
+                    <select class="form-control" id="content-selector">
+                        <option name="option-forms">Forms</option>
+                        <option name="option-forms">Calendar</option>
+                        <option name="option-forms">Audition Material</option>
+                        <option name="option-forms">Leadership Positions</option>
+                    </select>
+                </div>
             </div>
-        </section>
-        <section id="leadership-opportunities" class="info-section">
-            <div class="container">
-                <p class="fs-title">Leadership Opportunities</p>
-                <p class="fs-subtitle">How can you get involved?</p>
-                <br>
-                <div class="leadership-column col-sm-4">
-                    <p class="fs-content-title">Section Leader</p>
-                    <p class="fs-content">Make your section the best, damn section in the orchestra!</p>
-                    <br>
-                    <p class="fs-content">Section leaders lead sectionals and make sure their section can play the music.</p>
-                    <br>
-                    <p class="fs-content">Apply <a href="">here</a>. Applicants must be a member of CSO phil.</p>
-                </div>
-                <div class="leadership-column col-sm-4">
-                    <p class="fs-content-title">Conductor</p>
-                    <p class="fs-content">You wave your hands and the rest of us play the music!</p>
-                    <br>
-                    <p class="fs-content">Conductors will generally conduct 1-2 pieces, rehearsing them with the orchestra.</p>
-                    <br>
-                    <p class="fs-content">Apply <a href="">here</a>. Applicants will conduct the orchestra for a few minutes during our conductor elections, after which the people will choose.</p>
-                </div>
-                <div class="leadership-column col-sm-4">
-                    <p class="fs-content-title">Executive Board</p>
-                    <p class="fs-content">Make this orchestra's wheels turn! You directly shape CSO's future.</p>
-                    <br>
-                    <p class="fs-content">Positions include:</p>
-                    <ul>
-                        <li class="fs-content">President - <span>driving us forward</span></li>
-                        <li class="fs-content">Vice President - <span>internal management</span></li>
-                        <li class="fs-content">Performance Director - <span>everything rehearsals</span></li>
-                        <li class="fs-content">Treasurer<span> - Spending that $$</span></li>
-                            <li class="fs-content">Librarian - <span>music printing</span></li>
-                            <li class="fs-content">Social Chair - <span>social event planning</span></li>
-                        <li class="fs-content">Marketing/Recruitment Chair</li>
-                        <li class="fs-content">Fundraising Chair <span> - Spending that $$</span></li>
-                            <li class="fs-content">Historian - <span>taking pictures</span></li>
-                            <li class="fs-content">Chief Tech Officer - <span>website and tech</span></li>
-                            <li class="fs-content">Secretary - <span>meeting minutes</span></li>
-                    </ul>
-                    <br>
-                    <p class="fs-content">Apply <a href="">here</a>. Applicants will give a short speech followed by a Q-and-A, after we will vote.</p>
-                </div>
+            <div id="main-content" class="container">
+                
             </div>
         </section>
 		<!--#include file="footer.html"-->
-        <style>
-            #leadership-opportunities {
-                background: #2c3e50;
-                color: #fff;
-                text-align: left;
-            }
-            .leadership-column {
-                margin-bottom: 16px;
-            }
-            .leadership-column .fs-content {
-                padding-left: 4px;
-            }
-        </style>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/gm.js"></script>
+        <script src="js/libs/jquery.min.js"></script>
+        <script src="js/libs/underscore-min.js"></script>
+        <script src="js/dashboard.js"></script>
 	</body>
 </html>
