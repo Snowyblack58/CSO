@@ -24,13 +24,33 @@
             "title": "To audition for phil & section leader",
             "forms": [
                 {
-                    "name": "Audition packet",
+                    "name": "Audition info & packet",
                     "link": "#audition",
                     "isDownload": false
                 },
                 {
                     "name": "Audition slot signup",
-                    "link": "https://docs.google.com/forms/d/1_HxbavaPRcTGGU11q47601ZHJKFjQZvA8AQqnTATUmc/edit",
+                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSf5p2xoc8xgSW1-jQVAvPw7hsKHzkHmAj6-C0QYlzSEejfCjw/viewform?usp=sf_link",
+                    "isDownload": false
+                }
+            ]
+        },
+        {
+            "title": "To join Sounding off Summer",
+            "forms": [
+                {
+                    "name": "Interest info & packet",
+                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSco6enDoVBU44toB3unfa34RpvnLwx6pvmiD2P2fA61gb2u8A/viewform?usp=sf_link",
+                    "isDownload": false
+                }
+            ]
+        },
+        {
+            "title": "To suggest a piece",
+            "forms": [
+                {
+                    "name": "Song suggestion form",
+                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSdEbwFOolnr6ICRe7-het8QA2LmMZsNMvirpK7Ql4LRF9ArgQ/viewform",
                     "isDownload": false
                 }
             ]
