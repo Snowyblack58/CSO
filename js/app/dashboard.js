@@ -1,10 +1,9 @@
 define([
     'jquery',
     'underscore',
-    'text!../../partials/card-container.html',
     'text!../../partials/form-content.html',
     'json!../../json/dashboard-forms.json'
-], function($, _, CardContainerTemplate, FormsTemplate, FormsJson){
+], function($, _, FormsTemplate, FormsJson){
     var lookupTemplateAndJson = {
         'default': {
             'template': JSON.stringify(FormsTemplate),
@@ -17,17 +16,9 @@ define([
     }
 
     $(document).ready(function(){
-        createCardView();
         loadCardViewContent();
-        loadCardViewContent(FormsTemplate, FormsJson);
         syncHash();
     });
-
-    function createCardView() {
-        var newCardContainerTemplate = _.template(CardContainerTemplate);
-        var newCardContainerHtml = newCardContainerTemplate();
-        $('#main-content').append(newCardContainerHtml);
-    }
 
     function loadCardViewContent() {
         var selectedContent = window.location.hash;
