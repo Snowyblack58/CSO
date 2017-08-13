@@ -24,6 +24,11 @@
             "title": "To audition for phil & section leader",
             "forms": [
                 {
+                    "name": "Section leader info & expectations",
+                    "link": "https://docs.google.com/document/d/1j85EmSsNn4VMqTblxvPKwTV5MYe4ObStHBd8XFXRXZQ/edit?usp=sharing",
+                    "isDownload": false
+                },
+                {
                     "name": "Audition info & packet",
                     "link": "#audition",
                     "isDownload": false
