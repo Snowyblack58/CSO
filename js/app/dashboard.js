@@ -20,20 +20,42 @@ define([
             'json': JSON.stringify(AuditionJson)
         }
     }
+    var hashChangeListenerSupported = false;
 
     $(document).ready(function(){
         syncHashOrSelect();
         loadCardViewContent();
         syncHashOrSelect();
+        initializeSelectListeners();
+        initializeHashChangeListener();
     });
+
+    function initializeSelectListeners() {
+        $('#content-selector').change(function(){
+            window.location.hash = $(this).find('option:selected').attr('name');
+            if(!hashChangeListenerSupported){
+                loadCardViewContent();
+            }
+        });
+    }
+
+    function initializeHashChangeListener() {
+        if('onhashchange' in window) {
+            hashChangeListenerSupported = true;
+            $(window).bind('hashchange', function() {
+                syncSelectToHash();
+                loadCardViewContent();
+            })
+        } else {
+            hashChangeListenerSupported = false;
+        }
+    }
 
     function loadCardViewContent() {
         var selectedContent = window.location.hash;
-        console.log(selectedContent);
         if($('#content-selector option[name=' + selectedContent.substring(1) + ']').length == 0) {
             selectedContent = '#default'
         }
-        console.log(selectedContent);
         var obj = lookupTemplateAndJson[selectedContent.substring(1)];
         if(obj === undefined){
             window.location.hash = '';
@@ -42,17 +64,23 @@ define([
         var newContentTemplate = _.template(JSON.parse(obj.template));
         var newContentHtml = newContentTemplate(JSON.parse(obj.json));
         $('.content-container').html(newContentHtml);
-        window.location.hash = $('#content-selector option:selected').attr('name');
     }
 
     function syncHashOrSelect() {
-        console.log(window.location.hash);
         if(window.location.hash === ''){
             var selectedOption = $('#content-selector option:selected').attr('name');
             window.location.hash = selectedOption;
         } else {
-            console.log($('#content-selector option[name=' + window.location.hash.substring(1) + ']'))
-            $('#content-selector option[name=' + window.location.hash.substring(1) + ']').attr('selected','selected');
+            $('#content-selector option:selected').prop('selected', false);
+            $('#content-selector option[name=' + window.location.hash.substring(1) + ']').prop('selected', true);
+        }
+    }
+
+    function syncSelectToHash() {
+        console.log(window.location.hash);
+        if(window.location.hash !== ''){
+            $('#content-selector option:selected').prop('selected', false);
+            $('#content-selector option[name=' + window.location.hash.substring(1) + ']').prop('selected', true);
         }
     }
 });
