@@ -12,7 +12,8 @@
 		</div>
 		<% _.each(section.packets, function(packet){ %>
 		<div class="audition-packet-link">
-			<a href="<%= packet.link %>" download><%= packet.name %></a>
+			<% var link = packet.link; if(link === ''){ link = 'raw/auditionpackets/Fall 2017 Phil _ SL Auditions Packet - ' + packet.name + '.pdf';} %>
+			<a href='<%= link %>' <% if(link.indexOf('mailto') == -1){ %> download<% }%>><%= packet.name %></a>
 		</div>
 		<% }); %>
 	</div>
