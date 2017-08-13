@@ -147,11 +147,11 @@ p.gm-subheading-footer-title, .footer-title, .gm-subheader {
   font-size: 20px;
 }
 
-.col-sm-4 {
+/* .col-sm-4 {
   display: inline-block;
   width: 25%;
   vertical-align: top;
-}
+} */
 
 .footer-look-listen {
 
@@ -161,12 +161,12 @@ p.gm-subheading-footer-title, .footer-title, .gm-subheader {
   font-family: 'kollektif';
 }
 
-.row {
+/* .row {
   display: block;
   width: 82%;
   text-align: left;
   margin: 0 auto;
-}
+} */
 
 .footer-disclaimer {
   width: 97.5%;
@@ -203,12 +203,13 @@ li.sm-logo{
 }
 
 .setup {
-    font-family: 'museosans'
+    font-family: 'museosans';
     font-weight: 900;
 }
 
 .input-group {
-  padding: 0px 30px;
+  margin: auto;
+  padding: 0 30px;
   box-sizing: border-box;
 /*  border: 1px solid pink;*/
 }
