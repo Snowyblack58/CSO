@@ -1,8 +1,39 @@
-<div class="container">
-	<div class="col-sm-12">
-		<p id="audition-information"></p>
-	</div>
-	<div class="row">
-		
-	</div>
+<div class="row col-sm-12">
+	<p id="audition-information">To join CSO Phil or to be a section leader, you must audition! Packets with more information below!</p>
 </div>
+<div class="audition-sections-container row">
+	<% _.each(sections, function(section){ %>
+	<div class="audition-section col-sm-3">
+		<div class="audition-section-title">
+			<p><%= section.title %></p>
+		</div>
+		<% _.each(section.packets, function(packet){ %>
+		<div class="audition-packet-link">
+			<a href="<%= packet.link %>" download><%= packet.name %></a>
+		</div>
+		<% }); %>
+	</div>
+	<% }); %>
+</div>
+<style>
+	div.audition-sections-container {
+		padding: 0 1rem;
+	}
+	p#audition-information {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+	div.audition-section-title p {
+		font-size: 1.25rem;
+		font-weight: 600;
+	}
+    div.audition-section {
+        padding: 0 0 0 1rem;
+    }
+    div.audition-packet-link {
+		margin: 0.5rem 0 0;
+    }
+    div.audition-packet-link a:before {
+		content: "> ";
+	}
+</style>
