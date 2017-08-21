@@ -5,7 +5,7 @@
         <p class="form-card-section-title"><%= section.title %></p>
         <ul class="form-card-ul">
             <% _.each(section['forms'], function(form){ %>
-            <li class="form-card-li"><a href="<%= form.link %>" <% if(form.isDownload){ %>download<%}%>><%= form.name %></a></li>
+            <li class="form-card-li"><a href="<%= form.link %>" <% if(form.isDownload){ %>download<%} else { %> target="_blank" <%}%>><%= form.name %></a></li>
             <% }) %>
         </ul>
     </div>
