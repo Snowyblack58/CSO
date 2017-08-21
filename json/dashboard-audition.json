@@ -1,85 +1,85 @@
 {
     "signuplink": "https://docs.google.com/forms/d/1_HxbavaPRcTGGU11q47601ZHJKFjQZvA8AQqnTATUmc/edit",
     "sections": [
-    //     {
-//             "title": "Strings",
-//             "packets": [
-//                 {
-//                     "name": "Violin",
-//                     "link": ""
-//                 },
-//                 {
-//                     "name": "Viola",
-//                     "link": ""
-//                 },
-//                 {
-//                     "name": "Cello",
-//                     "link": ""
-//                 },
-//                 {
-//                     "name": "Bass",
-//                     "link": ""
-//                 }
-//             ]
-//         },
-//         {
-//             "title": "Winds",
-//             "packets": [
-//                 {
-//                     "name": "Flute",
-//                     "link": ""
-//                 },
-//                 {
-//                     "name": "Oboe",
-//                     "link": ""
-//                 },
-//                 {
-//                     "name": "Clarinet",
-//                     "link": ""
-//                 },
-//                 {
-//                     "name": "Bassoon",
-//                     "link": ""
-//                 }
-//             ]
-//         },
-//         {
-//             "title": "Brass",
-//             "packets": [
-//                 {
-//                     "name": "Horn",
-//                     "link": ""
-//                 },
-//                 {
-//                     "name": "Trumpet",
-//                     "link": ""
-//                 },
-//                 {
-//                     "name": "Trombone",
-//                     "link": ""
-//                 },
-//                 {
-//                     "name": "Tuba",
-//                     "link": ""
-//                 }
-//             ]
-//         },
-//         {
-//             "title": "Other",
-//             "packets": [
-//                 {
-//                     "name": "Percussion, email Caleb Calvert",
-//                     "link": "mailto:nkh2gd@virginia.edu"
-//                 },
-//                 {
-//                     "name": "Piano, email Austin Brown",
-//                     "link": "mailto:amb6sg@virginia.edu"
-//                 },
-//                 {
-//                     "name": "Other, email Austin Brown",
-//                     "link": "mailto:amb6sg@virginia.edu"
-//                 }
-//             ]
-//         }
+        {
+            "title": "Strings",
+            "packets": [
+                {
+                    "name": "Violin",
+                    "link": ""
+                },
+                {
+                    "name": "Viola",
+                    "link": ""
+                },
+                {
+                    "name": "Cello",
+                    "link": ""
+                },
+                {
+                    "name": "Bass",
+                    "link": ""
+                }
+            ]
+        },
+        {
+            "title": "Winds",
+            "packets": [
+                {
+                    "name": "Flute",
+                    "link": ""
+                },
+                {
+                    "name": "Oboe",
+                    "link": ""
+                },
+                {
+                    "name": "Clarinet",
+                    "link": ""
+                },
+                {
+                    "name": "Bassoon",
+                    "link": ""
+                }
+            ]
+        },
+        {
+            "title": "Brass",
+            "packets": [
+                {
+                    "name": "Horn",
+                    "link": ""
+                },
+                {
+                    "name": "Trumpet",
+                    "link": ""
+                },
+                {
+                    "name": "Trombone",
+                    "link": ""
+                },
+                {
+                    "name": "Tuba",
+                    "link": ""
+                }
+            ]
+        },
+        {
+            "title": "Other",
+            "packets": [
+                {
+                    "name": "Percussion, email Caleb Calvert",
+                    "link": "mailto:nkh2gd@virginia.edu"
+                },
+                {
+                    "name": "Piano, email Austin Brown",
+                    "link": "mailto:amb6sg@virginia.edu"
+                },
+                {
+                    "name": "Other, email Austin Brown",
+                    "link": "mailto:amb6sg@virginia.edu"
+                }
+            ]
+        }
     ]
 }
