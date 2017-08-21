@@ -1,0 +1,131 @@
+#home {
+    overflow: hidden;	
+    background-image: url('../raw/CSO Badge Circle-01.png');
+    background: radial-gradient( #231f20 , black);
+    text-align: center;
+    background-size: cover;
+}
+#home nav {
+    background: rgba(0,0,0,0.8);
+}
+
+#home .navbar-collapse {
+    text-align: center;	
+}
+#home .nav {
+    display: inline-block;
+    float: none;
+}
+#home .navbar-header {
+    display: none;
+}
+#home nav a {
+    color: #fff;
+}
+
+.bg-video {
+    position: absolute;
+    left: 0;
+    top: -30%;
+    min-width: 100%;
+    min-height: 100%;
+}
+.home-content-overlay {
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    
+}
+.home-title-overlay {
+    font-variant: small-caps;
+    font-size: 65px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.home-subtitle-overlay {
+    font-size: 24px;
+    color: #fff;
+
+}
+.home-links-overlay {
+    margin-top: 16px;
+    padding: 0;
+}
+.home-links-overlay li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 16px;
+    padding: 8px 0;
+    background: #212121;
+    opacity: 0.87;
+}
+.home-links-overlay li:hover {
+    outline: solid 1px #fff;	
+}
+.home-links-overlay a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 32px;
+}
+.home-links-overlay a:hover {
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+footer .disclaimer {
+    color: #fff;
+    background: #212121;
+    opacity: 0.54;
+    font-size: 12px;
+    text-align: left;
+    padding: 8px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    font-style: italic;
+    font-stretch: condensed;
+}
+footer .disclaimer::-webkit-scrollbar { 
+    display: none; 
+}
+@media (max-width: 768px){
+    #home nav li {
+        float: left;
+    }
+}
+
+@media (max-device-width: 768px) {
+    #home {
+        background-image: url("raw/piano.jpg");
+        background-position: top;
+    }
+    #home .navbar-collapse {
+        text-align: center;
+    }
+    #home .nav {
+        display: inline-block;
+        float: none;
+    }
+    #home .navbar-header {
+        display: none;
+    }
+    .bg-video {
+        display: none;
+    }
+    .home-content-overlay {
+        margin-top: 80px;
+    }
+    .home-title-overlay {
+        font-size: 40px;
+    }
+    .home-subtitle-overlay {
+        font-size: 12px;
+    }
+    #home nav li {
+        float: left;
+    }
+}

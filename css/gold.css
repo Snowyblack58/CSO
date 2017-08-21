@@ -57,7 +57,7 @@ h1.fs-title, #join-step-2a {
 h1.main-title {
   font-size: 100px;
   margin: 0;
-    line-height: 1.3em;
+    line-height: 15vh;
 }
 
 
@@ -153,13 +153,16 @@ p.gm-subheading-footer-title, .footer-title, .gm-subheader {
   vertical-align: top;
 }
 
-.footer-look-listen {
-
-}
-
 .footer {
-  font-family: 'kollektif';
+  font-family: 'museo sans';
+  font-weight: 100;
 }
+
+.footer i {
+  font-weight: 500;
+}
+
+
 
 .row {
   display: block;
@@ -188,10 +191,6 @@ li.sm-logo{
 
 #youtube {
   margin-top: 10px;
-}
-
-.imptppl {
-  font-weight: bold-italic;
 }
 
 .fs-content-title {
@@ -229,6 +228,7 @@ h1.fs-title.shadow {
 .lessen {
     text-shadow: 1px 3px 5px rgba(144, 130, 107, 0.7);
 }
+
 
 #faq {
 	padding: 16px;

@@ -105,6 +105,7 @@
 	src: url('fonts/GothamBlack.otf');
 	font-weight: 900;
 	font-style: normal;
+    
 }
 
 @font-face {
@@ -144,7 +145,7 @@ section {
 	text-align: center;
 }
 
-h1, h2, h3 {
+h1, h2, h3, a {
     font-family: 'bodoni-st';
     font-weight: bold;
 }
@@ -206,6 +207,7 @@ p {
 }
 .info-section-title {
     text-align: left;
+
 }
 .info-title {
     margin-top: 32px;
@@ -264,6 +266,7 @@ p {
     border-radius: 4px;
     border: solid 1px #ccc;
     z-index: 1;
+    box-shadow: 2px 2px 2px rgba(23, 23, 24, 0.5);
 }
 @media(max-width: 768px){
     .vertical-scrollbar {
@@ -273,16 +276,15 @@ p {
 .vertical-scrollbar a {
     display: block;
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
-    text-transform: uppercase;
     color: #000;
 }
 .vertical-scrollbar a:hover {
     text-decoration: none;
     background: #efefef;
     border-radius: 4px;
-    color: #000;
+    color: #bc994e;
 
 }
 .vs-link {
@@ -329,9 +331,9 @@ p {
     font-style: italic;
 }
 .fs-content-title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
-    text-transform: uppercase;
+    margin-top: 0px;
 }
 .fs-table-content {
     font-size: 20px;
@@ -586,6 +588,7 @@ p {
 /*	box-shadow: 0 2px 8px;*/
 	border: none;
 }
+
 .nav {
     float: none;
 }
@@ -656,6 +659,26 @@ p {
     }
 }
 
+@media screen and (max-width:480px) {
+    #navbar {
+        display: none;
+    }
+    
+    #navbar li {
+        display: block;
+
+    }
+    
+    li.navbar-home {
+        margin: 0 auto;
+        width: 125px;
+    }
+    
+    li.navbar-members {
+        display: none !important;
+    }
+}
+
 .navbar-home {
 	width: 100px;
 }
@@ -690,6 +713,9 @@ p {
 .footer-list li a {
 	text-decoration: none;
 	color: #000;
+	    margin: 0;
+    font-family: 'museo sans';
+    font-weight: 300;
 }
 .footer-list li a:hover {
 	color: #3498db;
@@ -700,4 +726,132 @@ p {
 }
 .footer img {
     opacity: 0.54;
+}
+
+div#email-form, p#disclaimer-body {
+	display: none;
+	margin-top: 20px;
+}
+
+div#email-form {
+	text-align: center;
+}
+
+p#disclaimer-body {
+	text-align: left;
+}
+
+.footer button {
+	border-radius: 0px;
+	border: none;
+	color:	#D5AD6D; /*if no support for background-clip*/
+	
+		background: -webkit-linear-gradient(transparent, transparent),
+             -webkit-linear-gradient(30deg, 
+/*                 rgba(226,186,120,1) 0%, */
+                 rgba(163,126,67,1) 0%, 
+                 rgba(145,112,59,1) 20%,
+                 rgb(239, 194, 121) 40%, 
+                 rgb(239, 194, 121) 43%,
+                 rgba(213,173,109,1) 45%,
+                 rgba(213,173,109,1) 50%,
+                 rgba(145,112,59,1) 60%,
+                  rgb(173, 136, 78) 80%,
+                  rgba(163,126,67,1) 100% 
+             );
+
+    
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#stay-updated h1 {
+	color: white;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+	.footer-list {
+		text-align: center;
+	}
+	.footer-list li, h2.gm-subheading.footer-title {
+		text-align: center;
+	}
+
+	.footer .col-sm-3 {
+		margin: 20px;
+	}
+
+
+	#disclaimer-body {
+	  display: none;
+	}
+
+	.footer button {
+		text-align: center;
+	}
+}
+
+
+/********** **********
+*       ABOUT
+********** **********/
+      #about-background::before {
+                background-image: url(raw/viola.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            #about-background {
+                min-height: inherit;
+                height: 80%;
+            }
+               
+            #who {
+                background: #2c3e50;
+                color: #fff;
+            }
+            #what {
+                background: #fff;
+                color: #000;
+            }
+            #photos {
+                background: #2c3e50;
+                color: #fff;
+            }
+            #headshots, .headshot {
+                padding: 0;
+                margin: 0;
+            }
+            .headshot img {
+                width: 100%;
+            }
+.icon {
+    width: 40px;
+    height: auto;
+}
+
+.info-card.row {
+    padding: 10px 0px;
+}
+
+section#mission {
+    text-align: center;
+    text-align-last: center;
+    
+}
+
+#thelogo {
+    width: 60vmax;
+    margin-top: 10vmax;
+}
+
+/********** **********
+*       JOIN
+********** **********/
+h1.southink.main-title {
+	font-size: 8vw;
 }

@@ -191,8 +191,8 @@ h1 {
 }
 
 #reps17 li {
-	font-size: 50px;
-	margin-bottom: 15px;
+	font-size: 4vmax;
+	margin-bottom: 0px;
 }
 
 #horizontalbar a.current {
@@ -226,6 +226,12 @@ h1 {
 	display: block;
 }
 
+#odyssey {
+	text-align: center;
+    margin: 20px 0px 10px 0px;
+}
+
+
 /********** **********
 *      SECTION 1 Fall 2016
 ********** **********/
@@ -238,8 +244,13 @@ h1 {
 /********** **********
 *      SECTION 1 Spring 2016
 ********** **********/
-#spring2016page {
+#spr16page {
 	background: black;
+    font-size: 5vmax;
+}
+
+#spr16page li {
+
 }
 
 .black {
@@ -253,11 +264,6 @@ h1 {
 
 .spr16rep {
 	padding-top: 10vmax;
-}
-
-#odyssey {
-	
-	text-align: center;
 }
 
 
@@ -313,6 +319,10 @@ h1 {
 	padding-top: 5vmax;
 }
 
+#horizontalbar li {
+    padding: 0px 10px;
+}    
+    
 ul {
 	padding: 0 15%;
 }
