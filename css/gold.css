@@ -78,31 +78,6 @@ h1.main-title {
 }
 
 
-h1, h2, h3, h4 {
-
-  color:	#D5AD6D; /*if no support for background-clip*/
-	
-		background: -webkit-linear-gradient(transparent, transparent),
-             -webkit-linear-gradient(30deg, 
-/*                 rgba(226,186,120,1) 0%, */
-                 rgba(163,126,67,1) 0%, 
-                 rgba(145,112,59,1) 20%,
-                 rgb(239, 194, 121) 40%, 
-                 rgb(239, 194, 121) 43%,
-                 rgba(213,173,109,1) 45%,
-                 rgba(213,173,109,1) 50%,
-                 rgba(145,112,59,1) 60%,
-                  rgb(173, 136, 78) 80%,
-                  rgba(163,126,67,1) 100% 
-             );
-
-    
-	background: -o-linear-gradient(transparent, transparent);
-	-webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-    
-
 h1#offsetgradient {
     	background: -webkit-linear-gradient(transparent, transparent),
              -webkit-linear-gradient(left, 
