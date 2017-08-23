@@ -1,3 +1,57 @@
+$gold: #BC994E;
+
+$black: #231f20;
+
+
+%gold-gradient {
+
+  color: #D5AD6D; /*if no support for background-clip*/
+	
+		background: -webkit-linear-gradient(transparent, transparent),
+             -webkit-linear-gradient(30deg, 
+/*                 rgba(226,186,120,1) 0%, */
+                 rgba(163,126,67,1) 0%, 
+                 rgba(145,112,59,1) 20%,
+                 rgb(239, 194, 121) 40%, 
+                 rgb(239, 194, 121) 43%,
+                 rgba(213,173,109,1) 45%,
+                 rgba(213,173,109,1) 50%,
+                 rgba(145,112,59,1) 60%,
+                  rgb(173, 136, 78) 80%,
+                  rgba(163,126,67,1) 100% 
+             );
+
+    
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+    
+
+%gold-background-gradient{
+    	background: -webkit-linear-gradient(transparent, transparent),
+             -webkit-linear-gradient(left, 
+/*                 rgba(226,186,120,1) 0%, */
+                 rgba(163,126,67,1) 0%, 
+                 rgba(145,112,59,1) 10%,
+                 rgb(239, 194, 121) 22%, 
+                 rgb(239, 194, 121) 23%,
+                 rgba(213,173,109,1) 29%,
+                 rgba(213,173,109,1) 33%,
+                 rgba(145,112,59,1) 35%,
+                  rgb(173, 136, 78) 50%,
+                  rgba(163,126,67,1) 100% 
+             );
+       
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1, h2, h3, h4 {
+    color: $gold;
+}
+
 @font-face {
   font-family: bodoni;
   src: url('../fonts/Bodoni.ttf');
@@ -8,6 +62,19 @@
     src: url('../fonts/BodoniSvtyTwoITCTT-Book.ttf');
     font-weight: normal;
 	font-style: normal;
+}
+
+
+.setup {
+    font-family: 'museosans';
+    font-weight: 900;
+}
+
+.input-group {
+  margin: auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+/*  border: 1px solid pink;*/
 }
 
 @font-face {
@@ -753,4 +820,131 @@ section#mission {
     text-align: center;
     text-align-last: center;
     
+}
+
+
+
+#backinblack {
+    -webkit-text-fill-color: white;
+}
+
+#so-ya {
+    width: 340px;
+    height: auto;
+    vertical-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.setup {
+    font-size: 29px;
+}
+
+#join {
+    text-align: center;
+}
+
+.table-header {
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+#join .info-table {
+    text-align: left;
+    .center {
+            text-align: center;
+            float: none;
+        padding: 30px 0px 30px 70px;
+        }
+    p {
+        font-size: 18px;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+     #join-background::before {
+                background-image: url(raw/IMG_9430_compressed.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            #join-background {
+                min-height: inherit;
+                height: 50%;
+            }
+            #join-background p {
+                font-size: 48px;
+                color: #fff;
+                font-weight: 600;
+                font-family: "Satisfy", cursive;
+                text-shadow: 0 0 4px #000;
+            }
+            
+            #join-step-1 {
+                color: #fff;
+            }
+            #join-step-2 {
+
+                color: #000;
+            }
+            #join-step-2a {
+                padding: 0;
+                color: #000;
+            }
+            #join-step-3 {
+                color: #fff;
+            }
+            #forms>p, #dues>p {
+                text-align: left;
+                color: #fff;
+            }
+            #forms>a {
+                display: block;
+                margin-left: 24px;
+                color: #f1c40f;
+                text-align: left;
+            }
+            #forms>a:hover {
+                color: #f39c12;
+            }
+
+#join-step-2a {
+    padding: 20px 0px;
+}
+
+
+.infoblack {
+  background-color: $black;
+}
+
+p.gm-subheading-footer-title, .footer-title, .gm-subheader {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+fs-title span.special {
+    font-size: 200px;
+        letter-spacing: .03em;
+}
+
+#nomargin {
+    margin: 0px !important;
+}
+
+.lessen {
+    text-shadow: 1px 3px 5px rgba(144, 130, 107, 0.7);
+}
+
+#faq {
+	padding: 16px;
+}
+
+
+h1.fs-title.top.main-title, .fs-title.main-title.shadow{
+    font-family: 'bodoni' !important;
+}
+
+
+h4.top, h4.shadow {
+    font-size: 60px
 }

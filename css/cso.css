@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700");
+h1, h2, h3, h4 {
+  color: #BC994E; }
+
 @font-face {
   font-family: bodoni;
   src: url("../fonts/Bodoni.ttf"); }
@@ -7,6 +10,16 @@
   src: url("../fonts/BodoniSvtyTwoITCTT-Book.ttf");
   font-weight: normal;
   font-style: normal; }
+.setup {
+  font-family: 'museosans';
+  font-weight: 900; }
+
+.input-group {
+  margin: auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  /*  border: 1px solid pink;*/ }
+
 @font-face {
   font-family: bodoni-st;
   src: url("../fonts/BodoniSvtyTwoITCTT-Bold.ttf");
@@ -656,5 +669,107 @@ p {
 section#mission {
   text-align: center;
   text-align-last: center; }
+
+#backinblack {
+  -webkit-text-fill-color: white; }
+
+#so-ya {
+  width: 340px;
+  height: auto;
+  vertical-align: center;
+  margin: 30px 0px 0px 0px; }
+
+.setup {
+  font-size: 29px; }
+
+#join {
+  text-align: center; }
+
+.table-header {
+  font-size: 40px;
+  margin-bottom: 0px; }
+
+#join .info-table {
+  text-align: left; }
+  #join .info-table .center {
+    text-align: center;
+    float: none;
+    padding: 30px 0px 30px 70px; }
+  #join .info-table p {
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px; }
+
+#join-background::before {
+  background-image: url(raw/IMG_9430_compressed.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#join-background {
+  min-height: inherit;
+  height: 50%; }
+
+#join-background p {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Satisfy", cursive;
+  text-shadow: 0 0 4px #000; }
+
+#join-step-1 {
+  color: #fff; }
+
+#join-step-2 {
+  color: #000; }
+
+#join-step-2a {
+  padding: 0;
+  color: #000; }
+
+#join-step-3 {
+  color: #fff; }
+
+#forms > p, #dues > p {
+  text-align: left;
+  color: #fff; }
+
+#forms > a {
+  display: block;
+  margin-left: 24px;
+  color: #f1c40f;
+  text-align: left; }
+
+#forms > a:hover {
+  color: #f39c12; }
+
+#join-step-2a {
+  padding: 20px 0px; }
+
+.infoblack {
+  background-color: #231f20; }
+
+p.gm-subheading-footer-title, .footer-title, .gm-subheader {
+  font-weight: bold;
+  font-size: 20px; }
+
+fs-title span.special {
+  font-size: 200px;
+  letter-spacing: .03em; }
+
+#nomargin {
+  margin: 0px !important; }
+
+.lessen {
+  text-shadow: 1px 3px 5px rgba(144, 130, 107, 0.7); }
+
+#faq {
+  padding: 16px; }
+
+h1.fs-title.top.main-title, .fs-title.main-title.shadow {
+  font-family: 'bodoni' !important; }
+
+h4.top, h4.shadow {
+  font-size: 60px; }
 
 /*# sourceMappingURL=cso.css.map */
