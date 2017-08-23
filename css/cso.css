@@ -111,9 +111,15 @@ section {
   padding: 0;
   text-align: center; }
 
+/********** **********
+*  DEFAULTS
+*********** *********/
 h1, h2, h3, a {
   font-family: 'bodoni-st';
   font-weight: bold; }
+
+h1 {
+  font-size: 80px; }
 
 h4 {
   font-family: 'bodoni-st';
@@ -122,7 +128,8 @@ h4 {
 p {
   margin: 0;
   font-family: 'museo sans';
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 18px; }
 
 .horizontal-border {
   width: 25%;
@@ -264,14 +271,14 @@ p {
   font-size: 20px; }
 
 .fs-content {
-  font-size: 16px; }
+  font-size: 18px; }
 
 .fs-content span {
   font-size: 14px;
   font-style: italic; }
 
 .fs-content-title {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
   margin-top: 0px; }
 
@@ -280,7 +287,7 @@ p {
 
 @media (max-width: 768px) {
   .fs-table-content {
-    font-size: 16px; } }
+    font-size: 18px; } }
 /********** **********
 *      CALENDAR
 *********** *********/
@@ -589,6 +596,9 @@ p {
 .navbar-home img {
   width: 100%; }
 
+a#gold-emphasize {
+  color: #BC994E; }
+
 /********** **********
 *       FOOTER
 ********** **********/
@@ -670,6 +680,92 @@ section#mission {
   text-align: center;
   text-align-last: center; }
 
+/********** **********
+*       JOIN
+********** **********/
+#join h1, #join h2, #join h3, #join h4 {
+  color: #BC994E; }
+
+h1.fs-title, #join-step-2a {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px; }
+
+h1.fs-title {
+  font-size: 50px; }
+
+#join-step-2a {
+  margin-left: 0px !important;
+  margin-bottom: 0; }
+
+h1.main-title {
+  font-size: 100px;
+  margin: 0; }
+
+.main-title.shadow {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; }
+
+.main-title-container {
+  text-align: center;
+  margin: 0 auto; }
+
+.infowhite {
+  background-color: white; }
+
+.top {
+  z-index: 10;
+  position: relative;
+  display: block; }
+
+.shadow {
+  z-index: 1;
+  top: 0px;
+  text-shadow: 3px 3px 5px rgba(201, 181, 150, 0.7);
+  position: absolute;
+  color: white !important; }
+
+.infoblack {
+  background-color: #231f20; }
+
+p.gm-subheading-footer-title, .footer-title, .gm-subheader {
+  font-weight: bold;
+  font-size: 20px; }
+
+li.sm-logo {
+  margin-top: 0; }
+
+.fs-content-title {
+  font-weight: 1000; }
+
+.fs-subtitle {
+  padding-left: 30px; }
+
+.setup {
+  font-family: 'museosans';
+  font-weight: 900; }
+
+.input-group {
+  margin: auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  /*  border: 1px solid pink;*/ }
+
+.fs-title span.special {
+  font-size: 200px;
+  letter-spacing: .03em; }
+
+#nomargin {
+  margin: 0px !important; }
+
+.lessen {
+  text-shadow: 1px 3px 5px rgba(144, 130, 107, 0.7); }
+
+#faq {
+  padding: 16px; }
+
 #backinblack {
   -webkit-text-fill-color: white; }
 
@@ -746,30 +842,48 @@ section#mission {
 #join-step-2a {
   padding: 20px 0px; }
 
-.infoblack {
-  background-color: #231f20; }
+/********** **********
+*       SUPPORT
+********** **********/
+#support-banner h1#thankyou {
+  margin-bottom: 30px; }
 
-p.gm-subheading-footer-title, .footer-title, .gm-subheader {
-  font-weight: bold;
-  font-size: 20px; }
+h2.fs-title.donate {
+  margin-bottom: 20px; }
 
-fs-title span.special {
-  font-size: 200px;
-  letter-spacing: .03em; }
+#support-banner {
+  margin: 0 15%;
+  padding: 5% 0; }
 
-#nomargin {
-  margin: 0px !important; }
+#support-banner > div {
+  text-align: center; }
 
-.lessen {
-  text-shadow: 1px 3px 5px rgba(144, 130, 107, 0.7); }
+#support-piggy-bank {
+  height: 200px; }
 
-#faq {
-  padding: 16px; }
+.gm-display4 {
+  font-family: "Satisfy", cursive; }
 
-h1.fs-title.top.main-title, .fs-title.main-title.shadow {
-  font-family: 'bodoni' !important; }
+.divider {
+  width: 76%;
+  margin: 0 12%;
+  padding: 0;
+  border-bottom: solid 2px #000;
+  opacity: 0.12; }
 
-h4.top, h4.shadow {
-  font-size: 60px; }
+#support-information {
+  margin: 0 15%;
+  padding: 5% 0; }
+
+.gm1-answer {
+  font-size: 16px; }
+
+.justify-right {
+  text-align: justify;
+  text-align-last: right; }
+
+.justify-left {
+  text-align: justify;
+  text-align-last: left; }
 
 /*# sourceMappingURL=cso.css.map */
