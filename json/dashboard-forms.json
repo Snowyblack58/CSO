@@ -4,6 +4,11 @@
             "title": "To join",
             "forms": [
                 {
+                    "name": "INTEREST MEETING PACKET",
+                    "link": "raw/INTEREST MEETING INFO SHEET 2016-17.pdf",
+                    "isDownload": false
+                },
+                {
                     "name": "Pick an orchestra",
                     "link": "raw/CSO Fall 2017 Format Organization.pdf",
                     "isDownload": false
