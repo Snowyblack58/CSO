@@ -3,9 +3,11 @@ define([
     'underscore',
     'text!../../partials/form-content.html',
     'json!../../json/dashboard-forms.json',
+    'text!../../partials/calendar-content.html',
+    'json!../../json/dashboard-calendar.json',
     'text!../../partials/audition-content.html',
     'json!../../json/dashboard-audition.json'
-], function($, _, FormsTemplate, FormsJson, AuditionTemplate, AuditionJson){
+], function($, _, FormsTemplate, FormsJson, CalendarTemplate, CalendarJSON, AuditionTemplate, AuditionJson){
     var lookupTemplateAndJson = {
         'default': {
             'template': JSON.stringify(FormsTemplate),
@@ -14,6 +16,10 @@ define([
         'forms': {
             'template': JSON.stringify(FormsTemplate),
             'json': JSON.stringify(FormsJson)
+        },
+        'calendar': {
+            'template': JSON.stringify(CalendarTemplate),
+            'json': JSON.stringify(CalendarJSON)
         },
         'audition': {
             'template': JSON.stringify(AuditionTemplate),
