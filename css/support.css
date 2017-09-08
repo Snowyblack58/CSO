@@ -7,18 +7,6 @@ html, body {
 	font-size: 13px;
 }
 
-#banner {
-	background-image: url("../raw/IMG_9428_compressed.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-y: -50px;
-	height: 300px;
-}
-#banner div {
-	position: relative;
-	height: 100%;
-}
-
 #support {
 	box-shadow: 0 2px 8px;
 /*	margin-top: 50px;*/
