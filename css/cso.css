@@ -621,7 +621,7 @@ p {
 	height: 50px;
 }
 .logo {
-	background-image: url('../raw/cso-logo.png');
+	background-image: url('../raw/logos/cso-logo.png');
 	position: absolute;
 	left: 0;
 	top: 50px;

@@ -143,15 +143,6 @@
         </style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script>
-            $(document).ready(function(){
-                // $.ajax({
-                //     url: 'php/create-gallery.php',
-                //     type: 'POST',
-                //     success: function(data){
-                //         $('#headshots').append(data);
-                //     }
-                // })
-            });
             $(window).on('scroll',function(){
                 if(window.pageYOffset > $('#who').offset().top) {
                     $('#about-background').css('visibility', 'hidden');
