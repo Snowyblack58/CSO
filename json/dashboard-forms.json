@@ -17,7 +17,12 @@
                     "name": "Stand rental contract (opt.)",
                     "link": "https://docs.google.com/forms/d/e/1FAIpQLSfDfeqwYJj2GGBbb_gu8kWtPYTy54ES44jsXCUUgrYVWXlgfQ/viewform?usp=sf_link",
                     "isDownload": false
-                },
+                }
+            ]
+        },
+        {
+            "title": "Surveys",
+            "forms": [
                 {
                     "name": "Member Survey",
                     "link": "https://docs.google.com/forms/d/e/1FAIpQLSf1lIZWQ4_QI5bWdpuLI9L-IUoIEEWX-2f1ZenlvxZvKIZuKQ/viewform?usp=sf_link",
@@ -26,7 +31,7 @@
             ]
         },
         {
-            "title": "To suggest a piece",
+            "title": "Other",
             "forms": [
                 {
                     "name": "Song suggestion form",
