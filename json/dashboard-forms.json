@@ -1,18 +1,18 @@
 {
     "sections": [
         {
-            "title": "To join",
+            "title": "Important",
             "forms": [
                 {
-                    "name": "Interest Meeting Packet",
-                    "link": "raw/forms/INTEREST MEETING INFO SHEET 2016-17.pdf",
+                    "name": "Attendance",
+                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSeHmSZ4dyslzi-hAGqRsqOM__ZwcsDhwfNSqZJl7eAC4jOivg/viewform",
                     "isDownload": false
-                },
-                {
-                    "name": "Pick an orchestra",
-                    "link": "raw/forms/CSO Fall 2017 Format Organization.pdf",
-                    "isDownload": false
-                },
+                }
+            ]
+        },
+        {
+            "title": "To join",
+            "forms": [
                 {
                     "name": "Photo release form",
                     "link": "https://docs.google.com/forms/d/e/1FAIpQLSeptzHjkYSemOcvf5X3q4czO9EGVNwiBkjktx6f3ZFBmqzJvw/viewform?usp=sf_link",
@@ -31,26 +31,6 @@
                 {
                     "name": "Member Survey",
                     "link": "https://docs.google.com/forms/d/e/1FAIpQLSf1lIZWQ4_QI5bWdpuLI9L-IUoIEEWX-2f1ZenlvxZvKIZuKQ/viewform?usp=sf_link",
-                    "isDownload": false
-                }
-            ]
-        },
-        {
-            "title": "To audition for phil & section leader",
-            "forms": [
-                {
-                    "name": "Section leader info & expectations",
-                    "link": "raw/forms/CSO Section Leader Description.pdf",
-                    "isDownload": false
-                },
-                {
-                    "name": "Audition materials",
-                    "link": "#audition",
-                    "isDownload": false
-                },
-                {
-                    "name": "Audition slot signup",
-                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSf5p2xoc8xgSW1-jQVAvPw7hsKHzkHmAj6-C0QYlzSEejfCjw/viewform?usp=sf_link",
                     "isDownload": false
                 }
             ]
