@@ -2,6 +2,14 @@ $gold: #BC994E;
 
 $black: #231f20;
 
+@mixin border($color) {
+    border: 3px solid $color;
+} 
+
+@mixin flexme($direction) {
+    display: flex;
+    flex-flow: $direction wrap;
+}
 
 %gold-gradient {
 
@@ -214,7 +222,7 @@ section {
 }
 
 /********** **********
-*  DEFAULTS
+*      DEFAULTS
 *********** *********/
 
 h1, h2, h3, a {
@@ -899,6 +907,9 @@ h1.main-title {
 
 .infoblack {
   background-color: $black;
+    p {
+        color: white;
+    }
 }
 
 p.gm-subheading-footer-title, .footer-title, .gm-subheader {
@@ -1086,3 +1097,96 @@ h2.fs-title.donate {
     text-align: justify;
     text-align-last: left;
 }
+
+/********** **********
+*     MAILCHIMP
+********** **********/
+
+#mc_embed_signup{
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif; 
+}
+
+
+
+/********** **********
+*      CONCERTS
+********** **********/
+h1#spr16-header, h1#movie-music-header {
+    color: white;
+}
+
+/********** **********
+*     LEADERSHIP
+********** **********/
+#leadership {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin: 0px 10vw;
+        padding: 0px;
+    }
+    
+    
+    li {
+        text-decoration: none;
+    }
+    
+    .infoblack, .infowhite {
+        @include border(pink);
+    }
+    .dropdown {
+    display: none;
+    flex-flow: column wrap;
+    margin: 0px;
+    text-align: left;
+}
+    
+    #gears {
+        max-width: 30vw;
+        margin-right: 30px;
+    }
+    
+    h2 {
+        margin-left: 30px;
+        font-size: 60px;
+    }
+    
+    h3 {
+        font-size: 40px;
+    }
+    
+    h4 {
+        font-size: 25px;
+    }
+    
+    #involved {
+        margin: 0vw 15vw;
+    }
+    
+    #involved img{
+        max-width: 8vw;
+    }
+}
+
+.flexit {
+    @include flexme(row);
+    align-items: center;
+    justify-content: center;
+}
+
+.performance-button {
+    
+}
+
+.display {
+    display: none;
+}
+
+.show {
+    display: show;
+}
+

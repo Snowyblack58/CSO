@@ -313,12 +313,18 @@ h1 {
 	padding-top: 5vmax;
 }
 
-ul {
-	padding: 0 15%;
+#horizontalbar ul {
+	padding: 0 10%;
 }
 
+/*
 #horizontalbar a {
 	font-size: 4vmax;
+}
+    
+*/
+a.current {
+    margin: 10px;
 }
 }
 
@@ -330,4 +336,18 @@ img#odyssey {
 }
 }
 
+@media(max-width: 1000px){
+    
+}
 
+@media screen and (max-width:500px){
+    #rep h1 {
+        font-size: 9vmax;
+    }
+    #rep li {
+        font-size: 4vmax;
+        padding: 0px 1px;
+        
+    }
+    }
+}

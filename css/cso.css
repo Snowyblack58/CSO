@@ -112,7 +112,7 @@ section {
   text-align: center; }
 
 /********** **********
-*  DEFAULTS
+*      DEFAULTS
 *********** *********/
 h1, h2, h3, a {
   font-family: 'bodoni-st';
@@ -729,6 +729,8 @@ h1.main-title {
 
 .infoblack {
   background-color: #231f20; }
+  .infoblack p {
+    color: white; }
 
 p.gm-subheading-footer-title, .footer-title, .gm-subheader {
   font-weight: bold;
@@ -885,5 +887,65 @@ h2.fs-title.donate {
 .justify-left {
   text-align: justify;
   text-align-last: left; }
+
+/********** **********
+*     MAILCHIMP
+********** **********/
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica,Arial,sans-serif; }
+
+/********** **********
+*      CONCERTS
+********** **********/
+h1#spr16-header, h1#movie-music-header {
+  color: white; }
+
+/********** **********
+*     LEADERSHIP
+********** **********/
+#leadership ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0px 10vw;
+  padding: 0px; }
+#leadership li {
+  text-decoration: none; }
+#leadership .infoblack, #leadership .infowhite {
+  border: 3px solid pink; }
+#leadership .dropdown {
+  display: none;
+  flex-flow: column wrap;
+  margin: 0px;
+  text-align: left; }
+#leadership #gears {
+  max-width: 30vw;
+  margin-right: 30px; }
+#leadership h2 {
+  margin-left: 30px;
+  font-size: 60px; }
+#leadership h3 {
+  font-size: 40px; }
+#leadership h4 {
+  font-size: 25px; }
+#leadership #involved {
+  margin: 0vw 15vw; }
+#leadership #involved img {
+  max-width: 8vw; }
+
+.flexit {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; }
+
+.display {
+  display: none; }
+
+.show {
+  display: show; }
 
 /*# sourceMappingURL=cso.css.map */
