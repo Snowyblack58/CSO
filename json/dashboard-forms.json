@@ -1,25 +1,35 @@
 {
     "sections": [
         {
-            "title": "To join",
+            "title": "Attendance",
             "forms": [
                 {
-                    "name": "Photo release form",
-                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSeptzHjkYSemOcvf5X3q4czO9EGVNwiBkjktx6f3ZFBmqzJvw/viewform?usp=sf_link",
-                    "isDownload": false
-                },
-                {
-                    "name": "Liability form",
-                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSd-mp6mBovm9OavUNSbH1fJ3mJOiPLhZprqBFkBV4PObep9BQ/viewform?usp=sf_link",
-                    "isDownload": false
-                },
-                {
-                    "name": "Stand rental contract (opt.)",
-                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSfDfeqwYJj2GGBbb_gu8kWtPYTy54ES44jsXCUUgrYVWXlgfQ/viewform?usp=sf_link",
+                    "name": "Attendance form",
+                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSdpi9JejzD5w24Bh1cthGDy__6FPOt6z_o7HRnpZFOazpZ_og/viewform",
                     "isDownload": false
                 }
             ]
         },
+        // {
+        //     "title": "To join",
+        //     "forms": [
+        //         {
+        //             "name": "Photo release form",
+        //             "link": "https://docs.google.com/forms/d/e/1FAIpQLSeptzHjkYSemOcvf5X3q4czO9EGVNwiBkjktx6f3ZFBmqzJvw/viewform?usp=sf_link",
+        //             "isDownload": false
+        //         },
+        //         {
+        //             "name": "Liability form",
+        //             "link": "https://docs.google.com/forms/d/e/1FAIpQLSd-mp6mBovm9OavUNSbH1fJ3mJOiPLhZprqBFkBV4PObep9BQ/viewform?usp=sf_link",
+        //             "isDownload": false
+        //         },
+        //         {
+        //             "name": "Stand rental contract (opt.)",
+        //             "link": "https://docs.google.com/forms/d/e/1FAIpQLSfDfeqwYJj2GGBbb_gu8kWtPYTy54ES44jsXCUUgrYVWXlgfQ/viewform?usp=sf_link",
+        //             "isDownload": false
+        //         }
+        //     ]
+        // },
         {
             "title": "Surveys",
             "forms": [
