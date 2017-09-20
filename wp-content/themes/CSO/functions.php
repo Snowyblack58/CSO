@@ -57,3 +57,9 @@ function migration_scripts_styles() {
 	//$wp_styles->add_data( 'migration-ie', 'conditional', 'lt IE 9' );
 }
 add_action( 'wp_enqueue_scripts', 'migration_scripts_styles' );
+
+function cc_mime_types($mimes) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
