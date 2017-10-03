@@ -22,91 +22,75 @@
 	<title></title>
 </head>
 <body id="home">
-<!--#include file="navbar.html"-->
-
-<!-- 
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
-	<div class="container">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="#"><img src="raw/logos/LogoWhite.png" alt="CSO" style="width: 60px; height: 30px"></a>
-		</div>
-		<div class="navbar-collapse">
-			<ul class="nav navbar-nav">
-				
-				<li class="navbar-about"><a class="gm-button" href="about.html">ABOUT</a></li>
-				<li class="navbar-join"><a class="gm-button" href="join.html">JOIN</a></li>
-				<li class="navbar-concerts"><a class="gm-button current" href="concert-spring2017.html">CONCERTS</a></li>
-				<li class="navbar-support"><a class="gm-button" href="support.html">SUPPORT</a></li>
-				
-			</ul>			
-		</div>
-	</div>
-</nav> -->
-
-
-<div class="buffer"></div>
 
 <nav id='horizontalbar' class='mynavbar'>
-        <ul>
-            <li><a href="concerts.html">Founding Season</a></li>
-            <li><a class="current" href="concert-fall2016.html">Fall 2016</a></li>
-            <li><a href="concert-spring2017.html">Spring 2017</a></li>
-        </ul>
+	<ul>
+		<li><a href="concerts.html">Founding Season</a></li>
+		<li><a class="current" href="concert-fall2016.html">Fall 2016</a></li>
+		<li><a href="concert-spring2017.html">Spring 2017</a></li>
+	</ul>
 </nav>
 <div class="thepage" id="fall2016page">
-<div class="section1" id="fall2016">
-	<div id='reps17'>
-		<h1 id="movie-music-header">MOVIE MUSIC</h1>
-		<li>Jurassic Park</li><br>
-		<li>Phantom of the Opera</li><br>
-		<li>Les Miserables</li><br>
-		<li>Star Wars VII: The Force Awakens</li><br>
-		<li>New World Symphony: Mvt. IV</li><br>
+	<div class="section1" id="fall2016">
+		<div id='reps17'>
+			<h1 id="movie-music-header">MOVIE MUSIC</h1>
+			<li>Jurassic Park</li><br>
+			<li>Phantom of the Opera</li><br>
+			<li>Les Miserables</li><br>
+			<li>Star Wars VII: The Force Awakens</li><br>
+			<li>New World Symphony: Mvt. IV</li><br>
+		</div>
 	</div>
-
-	<!-- <div id="ad">
-		<img src="raw/concerts/MovieMusic.png">
-	</div> -->
+	<div class="w3-content w3-display-container" style="max-width:800px">
+		<img class="mySlides" src="raw/images/IMG_9425_compressed.png" style="width:100%">
+		<img class="mySlides" src="raw/images/trombones.png" style="width:100%">
+		<img class="mySlides" src="raw/images/IMG_9405_compressed.png" style="width:100%">
+		<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+			<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+			<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+		</div>
+	</div>
 </div>
 
 
-<div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides" src="raw/images/IMG_9425_compressed.png" style="width:100%">
-  <img class="mySlides" src="raw/images/trombones.png" style="width:100%">
-  <img class="mySlides" src="raw/images/IMG_9405_compressed.png" style="width:100%">
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-  </div>
-</div>
-</div>
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	fixSlideControls();
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+	function currentDiv(n) {
+		showDivs(slideIndex = n);
+	}
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("demo");
+		if (n > x.length) {slideIndex = 1}    
+		if (n < 1) {slideIndex = x.length}
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" w3-white", "");
+		}
+		x[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " w3-white";
+	}
+	function fixSlideControls() {
+		var w3badgeSiblings = document.getElementsByClassName('w3-badge')[0].parentNode.childNodes;
+		for(var cnt = 0; cnt < w3badgeSiblings.length; cnt++){
+			if(w3badgeSiblings[cnt].tagName){
+				if(w3badgeSiblings[cnt].tagName.toString().toLowerCase() == 'br'){
+					w3badgeSiblings[cnt].style.display = 'none';
+				}
+			}
+		}
+	}
 </script>
 
 </body>

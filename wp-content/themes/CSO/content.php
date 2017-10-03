@@ -6,7 +6,7 @@
 
 	<article <?php post_class(); ?>>
 	
-		<header>			
+		<header>
 			<?php the_post_thumbnail(); ?>			
 			<h1><?php the_title(); ?></h1>			
 		</header>

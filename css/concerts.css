@@ -86,7 +86,7 @@ h1 {
 	height: 40px;
 }
 
-#rep ul, #reps17 ul, #horizontalbar ul {
+#rep ul, #horizontalbar ul {
 	text-align: center;
 	display: flex;
 	padding: 0px 25%;
