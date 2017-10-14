@@ -1,0 +1,36 @@
+<% var cnt = 0; %>
+<% _.each(sections, function(section) { %>
+<% if(cnt % 3 == 0) { %><div class="form-card-row row"><% } %>
+    <div class="form-card-section-container col-sm-4">
+        <p class="form-card-section-title"><%= section.title %></p>
+        <ul class="form-card-ul">
+            <% _.each(section['forms'], function(form){ %>
+            <li class="form-card-li"><a href="<%= form.link %>" <% if(form.isDownload){ %>download<%} else { %> target="_blank" <%}%>><%= form.name %></a></li>
+            <% }) %>
+        </ul>
+    </div>
+<% if(cnt % 3 == 2) { %></div><% } cnt += 1;%>
+<% }); %>
+<style>
+    div.form-card-row {
+        margin-bottom: 1rem;
+    }
+    p.form-card-section-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    p.form-card-section-title:after {
+        content: "...";
+    }
+    ul.form-card-ul {
+        padding: 0 0 0 1rem;
+    }
+    li.form-card-li {
+        list-style: none;
+        margin: 0.5rem 0 0;
+    }
+    .form-card-li a {
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+</style>

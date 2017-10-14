@@ -1,0 +1,53 @@
+<div class="row">
+	<p id="audition-signup-link">Sign up for an audition <a href="<%= signuplink %>" target="_blank">here</a>!</p>
+</div>
+<div class="row col-sm-12">
+	<p id="audition-information">To join CSO Phil or to be a section leader, you must audition! Packets with more information below!</p>
+</div>
+<div class="audition-sections-container row">
+	<% _.each(sections, function(section){ %>
+	<div class="audition-section col-sm-3">
+		<div class="audition-section-title">
+			<p><%= section.title %></p>
+		</div>
+		<% _.each(section.packets, function(packet){ %>
+		<div class="audition-packet-link">
+			<% var link = packet.link; if(link === ''){ link = 'raw/auditionpackets/Fall 2017 Phil _ SL Auditions Packet - ' + packet.name + '.pdf';} %>
+			<a href='<%= link %>' <% if(link.indexOf('mailto') == -1){ %> target="_blank"<% }%>><%= packet.name %></a>
+		</div>
+		<% }); %>
+	</div>
+	<% }); %>
+</div>
+<style>
+	p#audition-signup-link {
+		margin: 0 0 1rem;
+		font-size: 2rem;
+		font-weight: 600;
+		text-align: center;
+	}
+	p#audition-information {
+		font-size: 1rem;
+		margin: 0 0 2rem;
+		text-align: center;
+	}
+	div.audition-sections-container {
+		padding: 0 1rem;
+	}
+	div.audition-section-title p {
+		font-size: 1.25rem;
+		font-weight: 600;
+	}
+    div.audition-section {
+        padding: 0 0 0 1rem;
+    }
+    div.audition-packet-link {
+		margin: 0.5rem 0 0;
+	}
+	div.audition-packet-link a {
+		font-family: 'Roboto', sans-serif;
+	}
+    div.audition-packet-link a:before {
+		content: "> ";
+	}
+</style>
