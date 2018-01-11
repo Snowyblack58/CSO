@@ -178,12 +178,6 @@ p {
   text-align: left; }
 
 /********** **********
-*   VERT SCROLLBAR
-*********** *********/
-.vertical-scrollbar {
-  display: none; }
-
-/********** **********
 *   FONT STANDARD
 ********** **********/
 .fs-headline {
@@ -810,6 +804,27 @@ li.sm-logo {
   padding: 20px 0px; }
 
 /********** **********
+*    NEWSLETTER      *
+********** **********/
+#mc_embed_signup label {
+  display: block;
+  font-family: 'museo sans';
+  font-weight: 300;
+  font-size: 18px; }
+#mc_embed_signup input, #mc_embed_signup .indicates-required {
+  margin: 0;
+  font-family: 'museo sans';
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center; }
+#mc_embed_signup .mc-field-group, #mc_embed_signup .button, #mc_embed_signup .indicates-required {
+  margin-top: 20px; }
+#mc_embed_signup .button {
+  background-color: #BC994E;
+  color: white;
+  padding: 10px 20px; }
+
+/********** **********
 *       SUPPORT
 ********** **********/
 #support-banner h1#thankyou {
@@ -912,26 +927,5 @@ h1#spr16-header, h1#movie-music-header {
 
 .show {
   display: show; }
-
-/********** **********
-*    NEWSLETTER      *
-********** **********/
-#mc_embed_signup label {
-  display: block;
-  font-family: 'museo sans';
-  font-weight: 500;
-  font-size: 18px; }
-#mc_embed_signup input, #mc_embed_signup .indicates-required {
-  margin: 0;
-  font-family: 'museo sans';
-  font-weight: 300;
-  font-size: 18px;
-  text-align: center; }
-#mc_embed_signup .mc-field-group, #mc_embed_signup .button, #mc_embed_signup .indicates-required {
-  margin-top: 20px; }
-#mc_embed_signup .button {
-  background-color: #BC994E;
-  color: white;
-  padding: 10px 20px; }
 
 /*# sourceMappingURL=cso.css.map */

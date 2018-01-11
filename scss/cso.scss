@@ -995,6 +995,38 @@ li.sm-logo{
 }
 
 /********** **********
+*    NEWSLETTER      *
+********** **********/
+#mc_embed_signup {
+    & label {
+        display: block;
+        font-family: 'museo sans';
+        font-weight: 300;
+        font-size: 18px;
+    }
+    
+    & input, .indicates-required {
+        margin: 0;
+        font-family: 'museo sans';
+        font-weight: 300;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    & .mc-field-group, .button, .indicates-required{
+        margin-top: 20px;
+    }
+    
+    & .button {
+        background-color: $gold;
+        color: white;
+        padding: 10px 20px;
+    }
+    
+   
+}
+
+/********** **********
 *       SUPPORT
 ********** **********/
 #support-banner {
@@ -1133,35 +1165,4 @@ h1#spr16-header, h1#movie-music-header {
     display: show;
 }
 
-/********** **********
-*    NEWSLETTER      *
-********** **********/
-#mc_embed_signup {
-    & label {
-        display: block;
-        font-family: 'museo sans';
-        font-weight: 500;
-        font-size: 18px;
-    }
-    
-    & input, .indicates-required {
-        margin: 0;
-        font-family: 'museo sans';
-        font-weight: 300;
-        font-size: 18px;
-        text-align: center;
-    }
-    
-    & .mc-field-group, .button, .indicates-required{
-        margin-top: 20px;
-    }
-    
-    & .button {
-        background-color: $gold;
-        color: white;
-        padding: 10px 20px;
-    }
-    
-   
-}
 
