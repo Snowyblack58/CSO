@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+@font-face {
+  font-family: bodoni;
+  src: url("../fonts/Bodoni.ttf"); }
+input#submit-button {
+  padding: 10px;
+  font-size: 20px;
+  color: whtie;
+  background: #BC994E;
+  font-family: 'bodoni';
+  margin-top: 20px;
+  border: none;
+  border-radius: 2px; }
+
+#calebs-body {
+  background: #231f20;
+  font-family: 'bodoni';
+  text-align: center;
+  letter-spacing: .02em;
+  line-height: .2em; }
+
+body {
+  color: #BC994E; }
+
+h1, h2, h3, a {
+  font-family: 'bodoni-st';
+  font-weight: bold; }
+
+#calebs-body h1 {
+  font-size: 80px;
+  margin: 40px 0px; }
+
+#calebs-body h2 {
+  margin: 5px; }
+
+h4 {
+  font-family: 'bodoni-st';
+  font-weight: bold; }
+
+p {
+  margin: 0;
+  font-family: 'museo sans';
+  font-weight: 300;
+  font-size: 18px; }
+
+.myForm {
+  color: white; }
+
+input#prompt {
+  color: #231f20;
+  font-family: 'lora';
+  font-size: 14px;
+  border: none;
+  border-radius: 2px; }
+
+input#promprt, h3#inline {
+  display: inline-block; }
+
+h3#inline {
+  padding-right: 5px;
+  font-size: 20px;
+  color: white;
+  margin-left: -20px; }
+
+/*# sourceMappingURL=caleb.css.map */

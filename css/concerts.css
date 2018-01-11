@@ -21,18 +21,6 @@ h1 {
 /********** **********
 *       NAVBAR
 ********** **********/
-#navbar {
-	background: black ! important;
-	box-shadow: 0 2px 8px !important;
-	border: none;
-}
-
-#navbar a {
-	color: white;
-}
-
-/*
-
 
 .navbar-collapse.current {
 	color:pink;
@@ -48,11 +36,6 @@ h1 {
 	top: 0;
 	right: 0;
 	width: 100%;
-}
-
-.navbar-collapse a {
-	font-size: 15px;
-	letter-spacing: 1.6px;
 }
 
 .navbar-header {
@@ -74,7 +57,6 @@ h1 {
 		display: none;	
 	}
 }
-*/
 /********** **********
 *     2nd Navbar
 ********** **********/
