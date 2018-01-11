@@ -26,7 +26,7 @@
 		<link rel="mask-icon" href="/wp-content/uploads/2017/10/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Satisfy|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
@@ -42,7 +42,6 @@
 		<meta property="og:image:height" content = "732" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/magic.js"></script>
      
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/cso.css">

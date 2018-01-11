@@ -4,10 +4,10 @@ h1, h2, h3, h4 {
 
 @font-face {
   font-family: bodoni;
-  src: url("../fonts/Bodoni.ttf"); }
+  src: url("http://www.cavalierso.com/fonts/Bodoni.ttf"); }
 @font-face {
   font-family: bodoni-st;
-  src: url("../fonts/BodoniSvtyTwoITCTT-Book.ttf");
+  src: url("http://www.cavalierso.com/fonts/BodoniSvtyTwoITCTT-Book.ttf");
   font-weight: normal;
   font-style: normal; }
 .setup {
@@ -22,82 +22,82 @@ h1, h2, h3, h4 {
 
 @font-face {
   font-family: bodoni-st;
-  src: url("../fonts/BodoniSvtyTwoITCTT-Bold.ttf");
+  src: url("http://www.cavalierso.com/fonts/BodoniSvtyTwoITCTT-Bold.ttf");
   font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: bodoni-st;
-  src: url("../fonts/BodoniSvtyTwoITCTT-BookIta.ttf");
+  src: url("http://www.cavalierso.com/fonts/BodoniSvtyTwoITCTT-BookIta.ttf");
   font-weight: normal;
   font-style: italic; }
 @font-face {
   font-family: bodoni-sc-st;
-  src: url("../fonts/BodoniSvtyTwoOSITCTT-Book.ttf.ttf");
+  src: url("http://www.cavalierso.com/fonts/BodoniSvtyTwoOSITCTT-Book.ttf.ttf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: bodoni-st;
-  src: url("../fonts/BodoniSvtyTwoOSITCTT-Bold.ttf");
+  src: url("http://www.cavalierso.com/fonts/BodoniSvtyTwoOSITCTT-Bold.ttf");
   font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: bodoni-st;
-  src: url("../fonts/BodoniSvtyTwoOSITCTT-BookIt.ttf");
+  src: url("http://www.cavalierso.com/fonts/BodoniSvtyTwoOSITCTT-BookIt.ttf");
   font-weight: normal;
   font-style: italic; }
 @font-face {
   font-family: bodonismallcaps;
-  src: url("../fonts/bodoni-be-regular-small-caps-amp-oldstyle-figures.ttf"); }
+  src: url("http://www.cavalierso.com/fonts/bodoni-be-regular-small-caps-amp-oldstyle-figures.ttf"); }
 @font-face {
   font-family: kollektif;
-  src: url("../fonts/Kollektif.ttf"); }
+  src: url("http://www.cavalierso.com/fonts/Kollektif.ttf"); }
 @font-face {
   font-family: kollektif;
-  src: url("../fonts/Kollektif-Italic.ttf");
+  src: url("http://www.cavalierso.com/fonts/Kollektif-Italic.ttf");
   font-weight: italic; }
 @font-face {
   font-family: kollektif;
-  src: url("../fonts/Kollektif-BoldItalic.ttf");
+  src: url("http://www.cavalierso.com/fonts/Kollektif-BoldItalic.ttf");
   font-weight: bold-italic; }
 @font-face {
   font-family: kollektif;
-  src: url("../fonts/Kollektif-Bold.ttf");
+  src: url("http://www.cavalierso.com/fonts/Kollektif-Bold.ttf");
   font-weight: bold; }
 @font-face {
   font-family: bodonismallcaps;
-  src: url("../fonts/bodoni-be-regular-small-caps-amp-oldstyle-figures.ttf"); }
+  src: url("http://www.cavalierso.com/fonts/bodoni-be-regular-small-caps-amp-oldstyle-figures.ttf"); }
 @font-face {
   font-family: gotham;
-  src: url("../fonts/GothamExLight.otf");
+  src: url("http://www.cavalierso.com/fonts/GothamExLight.otf");
   font-weight: 100;
   font-style: normal; }
 @font-face {
   font-family: gotham;
-  src: url("../fonts/GothamLight.otf");
+  src: url("http://www.cavalierso.com/fonts/GothamLight.otf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: gotham;
-  src: url("fonts/GothamMedium.otf");
+  src: url("http://www.cavalierso.com/fonts/GothamMedium.otf");
   font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: gotham;
-  src: url("fonts/GothamBlack.otf");
+  src: url("http://www.cavalierso.com/fonts/GothamBlack.otf");
   font-weight: 900;
   font-style: normal; }
 @font-face {
   font-family: museosans;
-  src: url("fonts/Museo700-Regular.otf"); }
+  src: url("http://www.cavalierso.com/fonts/Museo700-Regular.otf"); }
 @font-face {
   font-family: museoslab;
-  src: url("fonts/Museo_Slab_900.otf"); }
+  src: url("http://www.cavalierso.com/fonts/Museo_Slab_900.otf"); }
 @font-face {
   font-family: museo;
-  src: url("fonts/MuseoSans_500.otf"); }
+  src: url("http://www.cavalierso.com/fonts/MuseoSans_500.otf"); }
 @font-face {
   font-family: LemonMilk;
-  src: url("../fonts/LemonMilk.otf"); }
+  src: url("http://www.cavalierso.com/fonts/LemonMilk.otf"); }
 html, body {
   width: 100%;
   height: 100%;
@@ -201,7 +201,6 @@ p {
   text-align: left; }
 
 .info-table-row-title {
-  border-bottom: solid 1px #455565;
   margin-bottom: 16px;
   padding-bottom: 16px; }
 
@@ -280,7 +279,9 @@ p {
 .fs-content-title {
   font-size: 30px;
   font-weight: 600;
-  margin-top: 0px; }
+  margin-top: 0px;
+  font-family: 'Roboto';
+  padding: 1rem 0 0; }
 
 .fs-table-content {
   font-size: 20px; }
@@ -291,83 +292,59 @@ p {
 /********** **********
 *      CALENDAR
 *********** *********/
-.lc-container {
-  padding: 0;
-  background: #ddd; }
-
-.lc-title-bar {
-  height: 64px;
-  line-height: 24px;
-  padding: 20px 24px; }
-
-.lc-title-bar p {
-  display: inline-block;
-  margin: 0; }
-
-.lc-title-bar input {
-  display: inline-block;
-  float: right;
-  width: 24px;
-  height: 24px;
-  background: #eee;
-  border: none; }
-
-.lc-main {
-  width: 100%;
-  height: 400px;
-  background: #eee;
-  padding: 8px;
-  overflow-y: scroll; }
-
-.lc-day-container {
+div.lc-container {
+  background: #e0e0e0;
+  min-height: 400px;
   width: 100%; }
 
-.lc-date-container {
-  float: left;
-  display: inline-block; }
+div.lc-header-title {
+  text-align: left;
+  padding: 0.5rem;
+  background: #ccc; }
 
-.lc-date {
-  width: 120px;
-  height: 64px;
-  line-height: 24px;
-  padding: 20px 24px; }
+div.lc-events-container {
+  width: 100%;
+  height: 100%; }
 
-.lc-dayofweek {
-  font-weight: 600;
+ul.lc-events-list {
+  width: 100%;
+  height: 100%;
+  padding: 0; }
+
+li.lc-event {
+  list-style: none;
+  display: flex;
+  margin: 1rem 1rem 0; }
+
+div.lc-event-date {
+  flex-grow: 0;
+  padding: 1rem;
+  white-space: nowrap;
   font-size: 16px;
-  text-transform: capitalize; }
+  font-weight: 600; }
 
-.lc-dateofmonth {
-  font-weight: 600;
-  font-size: 24px; }
-
-.lc-events-container {
-  display: inline-block;
-  width: calc(100% - 120px); }
-
-.lc-event {
-  margin: 8px;
-  padding: 8px;
-  border-radius: 2px; }
-
-.lc-event-title {
-  font-weight: 600;
+div.lc-event-info {
+  flex-grow: 1;
+  padding: 1rem;
   color: #fff;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap; }
+  text-align: left; }
 
-.lc-event-quickinfo {
-  color: #fff;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap; }
+div.lc-event-rehearsal {
+  background: #f70; }
 
-.lc-event-rehearsal {
-  background: #ff7800; }
+div.lc-event-social {
+  background: #63CA33; }
 
-.lc-event-social {
-  background: #ffd000; }
+p.lc-event-info-title {
+  font-weight: 600;
+  margin-bottom: 0;
+  letter-spacing: 0.25px;
+  font-size: 14px; }
+
+p.lc-event-info-description {
+  margin-bottom: 0;
+  letter-spacing: 0.25px;
+  font-size: 14px; }
 
 /********** **********
 *      MATERIAL
@@ -555,19 +532,18 @@ p {
   padding: 10px; }
 
 .buffer {
-  height: 50px; }
+  height: 40px; }
 
 .logo {
-	background-image: url('../raw/logos/cso-logo.png');
-	position: absolute;
-	left: 0;
-	top: 50px;
-	width: 100px;
-	height: 50px;
-	background-position: center;
-	background-size: cover;
-	margin: 16px;
-}
+  background-image: url("http://www.cavalierso.com/wp-content/uploads/2017/10/logo-gold.png");
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  margin: 16px; }
 
 @media (max-width: 768px) {
   nav li {
@@ -604,73 +580,71 @@ a#gold-emphasize {
 *       FOOTER
 ********** **********/
 .footer {
-  padding: 64px 0;
+  padding: 16px 0;
   background: #f8f8f8;
   width: 100%;
   color: #000;
-  text-align: center; }
-
-.footer-title {
-  /*	color: rgba(255,255,255,0.54);*/
-  text-transform: capitalize;
-  margin-bottom: 0px;
-  text-align: left; }
-
-.footer-list {
-  text-align: left;
-  list-style: none; }
-
-.footer-list li {
-  text-align: left;
-  margin-top: 14px; }
-
-.footer-list li a {
-  text-decoration: none;
-  color: #000; }
-
-.footer-list li a:hover {
-  color: #3498db; }
-
-.footer-disclaimer {
-  text-align: left;
-  margin-top: 16px; }
+  text-align: center;
+  display: flex;
+  position: absolute;
+  bottom: 0; }
 
 .footer img {
-  opacity: 0.54; }
+  opacity: 0.54;
+  height: 32px; }
+
+.footer img:hover {
+  opacity: 0.87; }
+
+.footer-logos {
+  flex-grow: 0.1; }
+
+.footer-links {
+  line-height: 32px; }
+
+.footer-links a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 4px 0 0; }
 
 /********** **********
 *       ABOUT
 ********** **********/
 #about-background::before {
-	background-image: url(raw/images/viola.png);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+  background-image: url("http://www.cavalierso.com/wp-content/uploads/2017/09/viola.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 #about-background {
-	min-height: inherit;
-	height: 80%;
-}
+  min-height: inherit;
+  height: 80%; }
 
 #who {
-	background: #2c3e50;
-	color: #fff;
-}
+  background: #2c3e50;
+  color: #fff; }
+
 #what {
-	background: #fff;
-	color: #000;
-}
-#photos {
-	background: #2c3e50;
-	color: #fff;
-}
+  background: #fff;
+  color: #000; }
+
+#welcome {
+  background: url(http://www.cavalierso.com/wp-content/uploads/2017/10/sosfall2017.jpg);
+  background-position-y: 33%;
+  color: #fff;
+  height: 250px; }
+
+#welcome .fs-title {
+  color: #fff; }
+
 #headshots, .headshot {
-	padding: 0;
-	margin: 0;
-}
+  padding: 0;
+  margin: 0; }
+
 .headshot img {
-	width: 100%;
-}
+  width: 100%; }
+
 .icon {
   width: 40px;
   height: auto; }
@@ -739,10 +713,10 @@ p.gm-subheading-footer-title, .footer-title, .gm-subheader {
   font-size: 20px; }
 
 li.sm-logo {
-  margin-top: 0; }
+  margin: 0 0 0.5rem; }
 
 .fs-content-title {
-  font-weight: 1000; }
+  font-weight: 600; }
 
 .fs-subtitle {
   padding-left: 30px; }
@@ -801,14 +775,14 @@ li.sm-logo {
     padding: 0px; }
 
 #join-background::before {
-  background-image: url(raw/IMG_9430_compressed.png);
+  background-image: url("http://www.cavalierso.com/wp-content/uploads/2017/09/IMG_9430_compressed.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
 
 #join-background {
   min-height: inherit;
-  height: 50%; }
+  height: 300px; }
 
 #join-background p {
   font-size: 48px;
@@ -904,6 +878,317 @@ h2.fs-title.donate {
 h1#spr16-header, h1#movie-music-header {
   color: white; }
 
+@font-face {
+  font-family: bodonismallcaps;
+  src: url("http://www.cavalierso.com/fonts/bodoni-be-regular-small-caps-amp-oldstyle-figures.ttf"); }
+@font-face {
+  font-family: LemonMilk;
+  src: url("http://www.cavalierso.com/fonts/LemonMilk.otf"); }
+
+/********** **********
+*       NAVBAR
+********** **********/
+#navbar {
+  background: black !important;
+  box-shadow: 0 2px 8px !important;
+  border: none; }
+
+#navbar a {
+  color: white; }
+
+/********** **********
+*     2nd Navbar
+********** **********/
+.buffer {
+  height: 65px; }
+
+#rep ul, #horizontalbar ul {
+  text-align: center;
+  display: flex;
+  padding: 0px 25%;
+  justify-content: space-around;
+  list-style: none; }
+
+#rep li, #reps17 li, #horizontalbar li {
+  list-style: none; }
+
+#horizontalbar {
+  background: white;
+  padding: 25px 0px; }
+
+#horizontalbar a {
+  color: black;
+  font-family: 'bodoni-st';
+  font-size: 20px;
+  letter-spacing: .03em; }
+
+#horizontalbar a:hover {
+  color: #adc8e6;
+  text-decoration: none; }
+
+/********** **********
+*      SECTION 1
+********** **********/
+.section1 {
+  padding: 20px 20px 0px 20px;
+  vertical-align: top;
+  display: block; }
+
+#rep {
+  color: white;
+  margin-left: 5%;
+  font-family: 'bodoni-st';
+  text-align: center;
+  vertical-align: top; }
+
+#rep h1 {
+  font-size: 10vmax;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 50px 0px 40px 0; }
+
+#rep li {
+  margin-bottom: 30px;
+  font-size: 5vmax; }
+
+#ad {
+  display: inline-block;
+  width: 39%;
+  vertical-align: top;
+  margin: 33px 0px 0px 0px; }
+
+#ad img {
+  display: block;
+  padding-left: 30px;
+  width: 100%;
+  height: 100%; }
+
+/********** **********
+*      SECTION 1 Spring 2017
+********** **********/
+#spr17page {
+  background: url("http://www.cavalierso.com/wp-content/uploads/2017/09/ConcertTileBackground_Odyssey-01.png"); }
+
+.section1 {
+  padding: 20px 5% 40px 0px;
+  vertical-align: top;
+  display: block; }
+
+#reps17 {
+  color: white;
+  margin-left: 5%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  vertical-align: top; }
+
+#reps17 h1 {
+  font-size: 8vmax;
+  font-family: 'LemonMilk';
+  margin: 50px 0px 40px 0; }
+
+#reps17 li {
+  font-size: 50px;
+  margin-bottom: 15px; }
+
+#horizontalbar a.current {
+  color: #a7b2ba; }
+
+#ad {
+  display: inline-block;
+  width: 39%;
+  vertical-align: top;
+  margin: 33px 0px 0px 0px; }
+
+#ad img {
+  display: block;
+  padding-left: 30px;
+  width: 100%;
+  height: 100%; }
+
+.section2 {
+  text-align: center;
+  display: block;
+  padding: 0% 5% 2% 5%;
+  width: 100%; }
+
+.section2 video {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  display: block; }
+
+/********** **********
+*      SECTION 1 Fall 2016
+********** **********/
+#fall2016page {
+  background-image: url("http://www.cavalierso.com/wp-content/uploads/2017/09/ConcertTile_MovieMusic-01.png");
+  padding-bottom: 50px; }
+
+/********** **********
+*      SECTION 1 Spring 2016
+********** **********/
+#spring2016page {
+  background: black; }
+
+.black {
+  background: url("http://www.cavalierso.com/wp-content/uploads/2017/09/bkg-spr16-02-01.png") no-repeat;
+  background-size: 100%; }
+
+#spr16-header {
+  font-family: 'bodonismallcaps' !important; }
+
+.spr16rep {
+  padding-top: 10vmax; }
+
+#odyssey {
+  text-align: center; }
+
+/********** **********
+*   SLIDESHOW
+********** **********/
+.mySlides {
+  display: none; }
+
+.mySlides img:nth-child(2n) {
+  margin: 66px 0px; }
+
+.w3-left, .w3-right, .w3-badge {
+  cursor: pointer; }
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+  border: 1px white solid;
+  margin: 0 8px; }
+
+.w3-display-container, .w3-content {
+  padding-bottom: 60px; }
+
+.w3-section, .w3-code {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important; }
+
+.w3-content {
+  max-width: 980px;
+  margin: auto; }
+
+.w3-rest {
+  overflow: hidden; }
+
+.w3-display-container:hover .w3-display-hover {
+  display: block; }
+
+.w3-display-container:hover span.w3-display-hover {
+  display: inline-block; }
+
+.w3-display-hover {
+  display: none; }
+
+.w3-container:after, .w3-container:before, .w3-panel:after, .w3-panel:before, .w3-row:after, .w3-row:before, .w3-row-padding:after, .w3-row-padding:before,
+.w3-transparent, .w3-hover-none:hover {
+  background-color: transparent !important; }
+
+.w3-badge, .w3-tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-right: 8px;
+  text-align: center; }
+
+.w3-badge {
+  border-radius: 50%; }
+
+.w3-tooltip, .w3-display-container {
+  position: relative; }
+
+.w3-tooltip .w3-text {
+  display: none; }
+
+.w3-tooltip:hover .w3-text {
+  display: inline-block; }
+
+.w3-white, .w3-hover-white:hover {
+  color: #000 !important;
+  background-color: #fff !important; }
+
+.w3-bar {
+  width: 100%;
+  overflow: hidden; }
+
+.w3-center .w3-bar {
+  display: inline-block;
+  width: auto; }
+
+.w3-bar-block.w3-center .w3-bar-item {
+  text-align: center; }
+
+.w3-block {
+  display: block;
+  width: 100%; }
+
+.w3-container, .w3-panel {
+  padding: 0.01em 16px; }
+
+.w3-panel {
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
+.w3-tiny {
+  font-size: 10px !important; }
+
+.w3-small {
+  font-size: 12px !important; }
+
+.w3-medium {
+  font-size: 15px !important; }
+
+.w3-large {
+  font-size: 18px !important; }
+
+.w3-text-white, .w3-hover-text-white:hover {
+  color: #fff !important; }
+
+.w3-display-bottommiddle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%); }
+
+.w3-left {
+  float: left !important; }
+
+.w3-right {
+  float: right !important; }
+
+.w3-display-bottommiddle {
+  margin-bottom: 100px; }
+
+@media screen and (max-width: 600px) {
+  .spr16rep {
+    padding-top: 5vmax; }
+
+  #horizontalbar ul {
+    padding: 0 10%; }
+
+  /*
+  #horizontalbar a {
+  	font-size: 4vmax;
+  }
+      
+  */
+  a.current {
+    margin: 10px; } }
+@media screen and (max-width: 500px) {
+  img#odyssey {
+    width: 100%; } }
+@media screen and (max-width: 500px) {
+  #rep h1 {
+    font-size: 9vmax; }
+
+  #rep li {
+    font-size: 4vmax;
+    padding: 0px 1px; } }
 /********** **********
 *     LEADERSHIP
 ********** **********/
@@ -949,5 +1234,3 @@ h1#spr16-header, h1#movie-music-header {
 
 .show {
   display: show; }
-
-/*# sourceMappingURL=cso.css.map */

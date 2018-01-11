@@ -1,7 +1,7 @@
 {
     "sections": [
         {
-            "title": "To join",
+            "title": "Joining",
             "forms": [
                 {
                     "name": "Photo release form",
@@ -21,21 +21,11 @@
             ]
         },
         {
-            "title": "Surveys",
+            "title": "Attendance",
             "forms": [
                 {
-                    "name": "Member Survey",
-                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSf1lIZWQ4_QI5bWdpuLI9L-IUoIEEWX-2f1ZenlvxZvKIZuKQ/viewform?usp=sf_link",
-                    "isDownload": false
-                }
-            ]
-        },
-        {
-            "title": "Other",
-            "forms": [
-                {
-                    "name": "Song suggestion form",
-                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSeqYLSlSLRtmJDSJ37u1ouPK3Hce1VZVhlk9JTMAkXx6653kg/viewform",
+                    "name": "Attendance form",
+                    "link": "https://docs.google.com/forms/d/e/1FAIpQLSdpi9JejzD5w24Bh1cthGDy__6FPOt6z_o7HRnpZFOazpZ_og/viewform",
                     "isDownload": false
                 }
             ]
