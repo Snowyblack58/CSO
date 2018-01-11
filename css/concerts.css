@@ -97,11 +97,6 @@ h1 {
 }
 
 
-@media (max-width: 768px) {
-    .buffer {
-        height: 90px;
-    }
-}
 
 /********** **********
 *      SECTION 1
