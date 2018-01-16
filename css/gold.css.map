@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAkDA,cAAe;EACX,KAAK,EAnDF,OAAO",
-"sources": ["gold.scss"],
+"sources": ["../scss/gold.scss"],
 "names": [],
 "file": "gold.css"
 }

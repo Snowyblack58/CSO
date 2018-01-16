@@ -1,10 +1,23 @@
-.footer {
+
+footer {
 	padding: 64px 0;
 	background: #212121;
 	width: 100%;
 	color: #FFF;
 	text-align: center;
+    
 }
+
+h1#footer, #footer h2, #footer h3, #footer h4 {
+    color: #BC994E;
+    font-family: 'bodoni-st';
+    font-weight: bold;
+}
+
+#footer a {
+    
+}
+
 .footer-title {
 	color: rgba(255,255,255,0.54);
 	text-transform: capitalize;
@@ -18,10 +31,6 @@
 .footer-list li {
 	text-align: left;
 	margin-top: 14px;
-}
-.footer-list li a {
-	text-decoration: none;
-	color: #FFF;
 }
 .footer-list li a:hover {
 	color: #ffea00;

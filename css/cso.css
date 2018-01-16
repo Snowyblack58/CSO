@@ -49,43 +49,8 @@ h1, h2, h3, h4 {
   font-family: bodonismallcaps;
   src: url("http://www.cavalierso.com/fonts/bodoni-be-regular-small-caps-amp-oldstyle-figures.ttf"); }
 @font-face {
-  font-family: kollektif;
-  src: url("http://www.cavalierso.com/fonts/Kollektif.ttf"); }
-@font-face {
-  font-family: kollektif;
-  src: url("http://www.cavalierso.com/fonts/Kollektif-Italic.ttf");
-  font-weight: italic; }
-@font-face {
-  font-family: kollektif;
-  src: url("http://www.cavalierso.com/fonts/Kollektif-BoldItalic.ttf");
-  font-weight: bold-italic; }
-@font-face {
-  font-family: kollektif;
-  src: url("http://www.cavalierso.com/fonts/Kollektif-Bold.ttf");
-  font-weight: bold; }
-@font-face {
   font-family: bodonismallcaps;
   src: url("http://www.cavalierso.com/fonts/bodoni-be-regular-small-caps-amp-oldstyle-figures.ttf"); }
-@font-face {
-  font-family: gotham;
-  src: url("http://www.cavalierso.com/fonts/GothamExLight.otf");
-  font-weight: 100;
-  font-style: normal; }
-@font-face {
-  font-family: gotham;
-  src: url("http://www.cavalierso.com/fonts/GothamLight.otf");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: gotham;
-  src: url("http://www.cavalierso.com/fonts/GothamMedium.otf");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: gotham;
-  src: url("http://www.cavalierso.com/fonts/GothamBlack.otf");
-  font-weight: 900;
-  font-style: normal; }
 @font-face {
   font-family: museosans;
   src: url("http://www.cavalierso.com/fonts/Museo700-Regular.otf"); }
@@ -94,10 +59,7 @@ h1, h2, h3, h4 {
   src: url("http://www.cavalierso.com/fonts/Museo_Slab_900.otf"); }
 @font-face {
   font-family: museo;
-  src: url("http://www.cavalierso.com/fonts/MuseoSans_500.otf"); }
-@font-face {
-  font-family: LemonMilk;
-  src: url("http://www.cavalierso.com/fonts/LemonMilk.otf"); }
+  src: url("fonts/MuseoSans_500.otf"); }
 html, body {
   width: 100%;
   height: 100%;
@@ -213,42 +175,6 @@ p {
 
 .itr-right {
   text-align: left; }
-
-/********** **********
-*   VERT SCROLLBAR
-*********** *********/
-.vertical-scrollbar {
-  position: fixed;
-  left: 24px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 128px;
-  background: #fff;
-  border-radius: 4px;
-  border: solid 1px #ccc;
-  z-index: 1;
-  box-shadow: 2px 2px 2px rgba(23, 23, 24, 0.5); }
-
-@media (max-width: 768px) {
-  .vertical-scrollbar {
-    display: none; } }
-.vertical-scrollbar a {
-  display: block;
-  width: 100%;
-  font-size: 18px;
-  font-weight: 600;
-  color: #000; }
-
-.vertical-scrollbar a:hover {
-  text-decoration: none;
-  background: #efefef;
-  border-radius: 4px;
-  color: #bc994e; }
-
-.vs-link {
-  width: 100%;
-  height: 64px;
-  line-height: 64px; }
 
 /********** **********
 *   FONT STANDARD
@@ -502,6 +428,9 @@ p.lc-event-info-description {
   font-family: 'bodoni-st';
   /*	background: #212121;*/
   /*	box-shadow: 0 2px 8px;*/
+  border: none;
+  background: #231f20 !important;
+  box-shadow: 0 2px 8px !important;
   border: none; }
 
 .nav {
@@ -515,18 +444,19 @@ p.lc-event-info-description {
   box-shadow: 0 -2px 0px #ffea00 inset; }
 
 #navbar li.active a {
-  color: #3498db; }
+  color: #BC994E; }
 
 #navbar a {
-  color: #000;
+  color: white;
   cursor: pointer;
   font-weight: 600;
   background: none;
   text-transform: lowercase;
-  font-size: 22px; }
+  font-size: 22px;
+  letter-spacing: 0.6px; }
 
 #navbar .navbar-nav li:not(.active) a:hover {
-  color: #3498db; }
+  color: #BC994E; }
 
 #navbar-brand {
   padding: 10px; }
@@ -545,28 +475,6 @@ p.lc-event-info-description {
   background-size: cover;
   margin: 16px; }
 
-@media (max-width: 768px) {
-  nav li {
-    float: left; }
-
-  .navbar-header {
-    display: none; } }
-@media (max-device-width: 768px) {
-  .navbar-collapse {
-    text-align: center; }
-
-  .nav {
-    display: inline-block;
-    float: none; }
-
-  .navbar-header {
-    display: none; }
-
-  nav li {
-    float: left; }
-
-  .buffer {
-    height: 90px; } }
 .navbar-home {
   width: 100px; }
 
@@ -576,37 +484,99 @@ p.lc-event-info-description {
 a#gold-emphasize {
   color: #BC994E; }
 
+#dropdown, #mobile {
+  display: none; }
+
+#mobile {
+  padding: 15px;
+  display: none; }
+
+#dropdown {
+  padding-top: 15px; }
+  #dropdown li {
+    margin-top: 10px; }
+
+#mobile #dropdown li {
+  display: block; }
+
+@media (max-width: 768px) {
+  #desktop {
+    display: none; }
+
+  #mobile {
+    display: inline-block; }
+
+  .buffer {
+    height: 90px; } }
+/********** **********
+*  HAMBURGER BUTTON  *
+********** **********/
+.hamburger {
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+  color: #BC994E;
+  left: 20px;
+  top: 20px; }
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s; }
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px); }
+
+.change .bar2 {
+  opacity: 0; }
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px); }
+
 /********** **********
 *       FOOTER
 ********** **********/
-.footer {
-  padding: 16px 0;
-  background: #f8f8f8;
-  width: 100%;
-  color: #000;
-  text-align: center;
-  display: flex;
-  position: absolute;
-  bottom: 0; }
+.footer-list li a:hover {
+  color: #ffea00; }
 
-.footer img {
-  opacity: 0.54;
-  height: 32px; }
+.footer-disclaimer {
+  text-align: left; }
 
-.footer img:hover {
-  opacity: 0.87; }
+#footer-toggle {
+  display: none;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 0px 12%; }
 
-.footer-logos {
-  flex-grow: 0.1; }
-
-.footer-links {
-  line-height: 32px; }
-
-.footer-links a {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  padding: 0 4px 0 0; }
+#footer {
+  background-color: lightgrey;
+  list-style: none;
+  margin: 0px; }
+  #footer img {
+    opacity: .54; }
+    #footer img:hover {
+      opacity: 1; }
+  #footer button {
+    background: transparent;
+    border: none;
+    color: #337ab7;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'bodoni-st';
+    padding: 0px;
+    margin: 0px; }
+  #footer .footer.flexit {
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 5%; }
+    #footer .footer.flexit h2 {
+      margin: 0px; }
 
 /********** **********
 *       ABOUT
@@ -819,6 +789,27 @@ li.sm-logo {
 
 #join-step-2a {
   padding: 20px 0px; }
+
+/********** **********
+*    NEWSLETTER      *
+********** **********/
+#mc_embed_signup label {
+  display: block;
+  font-family: 'museo sans';
+  font-weight: 300;
+  font-size: 18px; }
+#mc_embed_signup input, #mc_embed_signup .indicates-required {
+  margin: 0;
+  font-family: 'museo sans';
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center; }
+#mc_embed_signup .mc-field-group, #mc_embed_signup .button, #mc_embed_signup .indicates-required {
+  margin-top: 20px; }
+#mc_embed_signup .button {
+  background-color: #BC994E;
+  color: white;
+  padding: 10px 20px; }
 
 /********** **********
 *       SUPPORT
