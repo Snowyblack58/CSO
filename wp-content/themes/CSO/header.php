@@ -58,7 +58,7 @@
                             <a class="gm-button" href="http://www.cavalierso.com/auditions">AUDITIONS</a>
                         </li>
                         <li class="navbar-members">
-                            <a class="gm-button" href="http://www.cavalierso.com/members.html">MEMBERS</a>
+                            <a class="gm-button" href="http://www.cavalierso.com/members">MEMBERS</a>
                         </li>
 
                         <!--				<li class="navbar-contact"><a class="gm-button" href="contact.html">CONTACT</a></li>-->
@@ -99,7 +99,7 @@
                         <a class="gm-button" href="http://www.cavalierso.com/auditions">AUDITIONS</a>
                     </li>
                     <li class="navbar-members">
-                        <a class="gm-button" href="http://www.cavalierso.com/members.html">MEMBERS</a>
+                        <a class="gm-button" href="http://www.cavalierso.com/members">MEMBERS</a>
                     </li>
                 </div>
             </div>
