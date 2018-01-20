@@ -83,15 +83,26 @@ h1, h2, h3, a {
 h1 {
   font-size: 80px; }
 
+@media (max-width: 768px) {
+  h1 { 
+    font-size: 48px; } }
+
 h4 {
   font-family: 'bodoni-st';
   font-weight: bold; }
+
+strong {
+  font-family: 'Roboto';
+  font-weight: 700; }
 
 p {
   margin: 0;
   font-family: 'museo sans';
   font-weight: 300;
   font-size: 18px; }
+  
+span {
+  font-family: 'museo sans'; }
 
 .horizontal-border {
   width: 25%;
@@ -101,6 +112,21 @@ p {
 
 .horizontal-border.special {
   width: 100%; }
+  
+a.small-button {
+  display: inline-block;
+  font-family: 'Roboto';
+  margin: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #bc994e;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px; }
+
+a.small-button:hover {
+  text-decoration: none;
+  background: #9c792e; }
 
 /********** **********
 *  FIXED BACKGROUND
