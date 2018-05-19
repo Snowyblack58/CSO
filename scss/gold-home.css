@@ -1,0 +1,169 @@
+@keyframes shine {
+  0% {
+    background-position: 110% 0%, 0 0; }
+  100% {
+    background-position: -10% 0%, 0 0; } }
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #231f20;
+  background: url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/08/black-background-7.jpg") no-repeat center center;
+  background-size: cover;
+  margin: 0;
+  background-color: #231f20; }
+
+h2, h3, h4 {
+  position: relative;
+  display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  font-size: 3vmin;
+  letter-spacing: 1vw;
+  text-transform: uppercase;
+  margin: 0; }
+
+h2 {
+  line-height: 2em; }
+
+h3 {
+  font-weight: 900;
+  font-size: 10vmin;
+  letter-spacing: 0vw;
+  font-family: 'bodonismallcaps';
+  letter-spacing: .05em;
+  line-height: 1.5em; }
+
+h4 {
+  margin-top: 30px;
+  line-height: 2em; }
+
+[data-gold] {
+  color: #ac733c; }
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    [data-gold] {
+      color: transparent;
+      background-image: linear-gradient(to right, transparent 0%, transparent 45%, white 50%, transparent 55%, transparent 100%), linear-gradient(90deg, #c78c48, #cf9147 9.4%, #cf9348 9.4%, #b2763e 33.6%, #ad743c 35.7%, #ac723d 46.9%, #b0773d 51.7%, #b0793e 52.1%, #c4914c 64.6%, #c99750 68.5%, #ce9e54 73.2%, #f4d188);
+      background-position: 110% 0%, 0 0;
+      background-size: 200% auto, auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: shine 2s ease-in-out 2 alternate 2s; } }
+  [data-gold]:before {
+    content: attr(data-gold);
+    color: #f0d8a9;
+    position: absolute;
+    z-index: -1;
+    top: -.03vw;
+    left: 0px;
+    text-shadow: black 0px 0.08vw 12px; }
+
+[data-silver] {
+  color: #858585; }
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    [data-silver] {
+      color: transparent;
+      background-image: linear-gradient(to right, transparent 0%, transparent 45%, white 50%, transparent 55%, transparent 100%), linear-gradient(270deg, #8c8c8c 1.3%, #999 15%, #868686 29.6%, #828282 29.6%, #7d7d7d 31.8%, #797979 31.8%, #6a6a6a 38.9%, #d3d3d3);
+      background-position: 110% 0%, 0 0;
+      background-size: 200% auto, auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: shine 2s ease-in-out 2 alternate-reverse 2s; } }
+  [data-silver]:before {
+    content: attr(data-silver);
+    color: #fff;
+    position: absolute;
+    z-index: -1;
+    top: -.03vw;
+    left: 0px;
+    text-shadow: black 0px 0.08vw 20px; }
+
+.gold-home-container {
+  padding: 20px;
+  z-index: 2; }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  background: -webkit-radial-gradient(rgba(0, 0, 0, 0.7), rgba(35, 31, 32, 0.7));
+  background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(35, 31, 32, 0.7));
+  width: 100%;
+  position: absolute;
+  z-index: 1; }
+
+i.material-icons {
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+  background-color: #C99750; }
+
+i.material-icons:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  transform: scale(1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  border-color: #C99750; }
+
+i.material-icons:hover:after {
+  transform: scale(1);
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23); }
+
+i.material-icons:hover {
+  color: #C99750;
+  background-color: transparent;
+  transform: rotate(90deg);
+  cursor: pointer;
+  box-shadow: none; }
+
+.flexme {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0px 10vw; }
+
+.gold-home-container {
+  padding: 6vw; }
+
+.wrapper {
+  margin: 1vw;
+  margin-top: 35px; }
+
+@media (min-width: 993px) {
+  i.material-icons {
+    padding: 20px;
+    margin: 10px;
+    font-size: 2rem; }
+
+  i.material-icons:after {
+    border-width: 3px; }
+
+  .wrapper {
+    margin: 2vw;
+    margin-top: 50px; }
+
+  h2 {
+    line-height: 3em; }
+
+  h3 {
+    line-height: 1em; }
+
+  h4 {
+    line-height: 1.5em; }
+
+  .gold-home-container {
+    padding: 60px; } }
+
+/*# sourceMappingURL=gold-home.css.map */
